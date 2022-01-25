@@ -1,0 +1,22 @@
+.img{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.stripe1{
+    animation: stripe-one 60s ease 0s infinite;
+}
+@keyframes stripe-one {
+ 50%{
+    transform: translateY(-100%);
+ }
+}
+.stripe2{
+    transform: translateY(-100%);
+    animation: stripe-two 60s ease 0s infinite;
+}
+@keyframes stripe-two {
+    50%{
+        transform: translateY(0%);
+     }
+}
