@@ -1,6 +1,7 @@
 - Music Landing Page: https://html.design/download/delfood-restaurant-website-template/amp/
 - Music Landing Page 2: https://www.youtube.com/watch?v=Xn1aJkV5mzg
 - Music Landing Page 3: https://www.youtube.com/watch?v=NWFsAMnpDXw
+- Music Landing Page 4: https://codepen.io/chantel-sky/pen/dyYvrZO
 
 ---
 
