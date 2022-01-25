@@ -1,22 +1,70 @@
-.img{
-    height: 100vh;
-    overflow-y: hidden;
+body {
+  background-color: black;
+  color: white;
+  font-family: "Inconsolata", monospace;
+}
+.title {
+  font-size: 72px;
+  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  animation: colorAnimate 20s linear infinite;
+  background-size: 400%;
+}
+.sub-title{
+  font-size: 30px;
+}
+.img {
+  height: 70vh;
+  overflow-y: hidden;
 }
 
-.stripe1{
-    animation: stripe-one 60s ease 0s infinite;
+.stripe1 {
+  animation: stripe-one 60s ease 0s infinite;
+  margin-right: 4px;
 }
 @keyframes stripe-one {
- 50%{
+  50% {
     transform: translateY(-100%);
- }
+  }
 }
-.stripe2{
-    transform: translateY(-100%);
-    animation: stripe-two 60s ease 0s infinite;
+.stripe2 {
+  transform: translateY(-100%);
+  animation: stripe-two 60s ease 0s infinite;
+  margin-left: 4px;
 }
 @keyframes stripe-two {
-    50%{
-        transform: translateY(0%);
-     }
+  50% {
+    transform: translateY(0%);
+  }
+}
+
+.stripe-single-image {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  padding: 3px;
+  background-size: 400%;
+  animation: colorAnimate 20s linear infinite;
+}
+
+.stripe-single-image > * {
+  filter: blur(10px);
+}
+
+.stripe-single-image > img {
+  filter: blur(0);
+}
+
+@keyframes colorAnimate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
