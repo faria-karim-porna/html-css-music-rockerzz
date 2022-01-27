@@ -1,10 +1,38 @@
 .circular-section {
   width: 100%;
-  height: 1500px;
+  height: 2700px;
   border-radius: 100% / 50%;
+  position:relative;
+  background-color: black;
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+
+.circular-section-button{
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+
+.prev-button{
+ left: 5%;
+ top: 410px;
+ transform: rotate(-30deg);
+}
+
+.next-button{
+ right:5%;
+ top: 410px;
+ transform: rotate(30deg);
 }
 
 .cd-disk {
+  position: absolute;
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -12,6 +40,19 @@
   background-size: 400%;
   animation: colorAnimate 20s linear infinite;
   transition: transform 0.7s ease-in-out;
+}
+
+.disk-1 {
+  left: 15%;
+}
+
+.disk-2 {
+  left: 42%;
+  top: -150px;
+}
+
+.disk-3 {
+  right: 15%;
 }
 
 .cd-disk:hover {
