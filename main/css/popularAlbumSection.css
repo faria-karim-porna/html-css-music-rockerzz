@@ -2,10 +2,26 @@
   position: relative;
   top: 480px;
 }
-.album-card {
-  border: 3px solid white;
+
+.album-card-border {
+  background: white;
   height: 500px;
   width: 350px;
+  border-radius: 25px;
+  padding: 3px;
+}
+
+.album-card-border:hover {
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  animation: colorAnimate 20s linear infinite;
+  transform: scale(1.1);
+}
+
+.album-card {
+  height: 494px;
+  width: 344px;
+  background-color: rgb(24, 24, 24);
   border-radius: 25px;
   padding: 30px;
 }
@@ -14,7 +30,6 @@
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  border: 1px solid white;
 }
 
 .album-detail {
@@ -24,6 +39,7 @@
 .album-text {
   font-size: 20px;
 }
+
 .album-genre-border {
   background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   background-size: 400%;
