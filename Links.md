@@ -12,3 +12,7 @@
 ---
 
 - Music Wave: https://morioh.com/p/249e6b3b80d5
+
+---
+
+- Guitar SVG: https://www.svgrepo.com/svg/54201/guitar
