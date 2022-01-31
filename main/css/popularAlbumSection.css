@@ -1,0 +1,18 @@
+.popular-album-section{
+    position: relative;
+    top: 480px;
+}
+.album-card{
+    border: 3px solid white;
+    height: 500px;
+    width: 350px;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.album-image{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
