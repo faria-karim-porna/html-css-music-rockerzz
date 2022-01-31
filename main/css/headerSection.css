@@ -3,6 +3,9 @@ body {
   color: white;
   font-family: "Inconsolata", monospace;
 }
+.fa-guitar-electric{
+  color: #ff0;
+}
 .title {
   font-size: 72px;
   background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
@@ -16,7 +19,7 @@ body {
   font-size: 30px;
 }
 .img {
-  height: 70vh;
+  height: 93vh;
   overflow-y: hidden;
 }
 

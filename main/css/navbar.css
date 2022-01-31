@@ -1,9 +1,6 @@
-body {
-  font-family: "Poppins", sans-serif;
-}
-
 .header-section {
-  padding: 5px 0;
+  height: 7vh;
+  background-color: rgb(24, 24, 24); 
 }
 
 .custom-nav-container {
@@ -73,8 +70,8 @@ body {
   z-index: 3;
   top: 0;
   left: 0;
-  background-color: black;
-  background-color: rgba(72, 85, 254, 0.95);
+  /* background-color: black; */
+  background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
