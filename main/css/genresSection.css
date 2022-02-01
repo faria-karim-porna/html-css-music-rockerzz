@@ -1,0 +1,37 @@
+.genres-section {
+  background-color: rgb(24, 24, 24);
+  border-radius: 15px;
+}
+
+.genres-category-card {
+  background-color: black;
+  border-radius: 15px;
+  height: 150px;
+}
+
+.genres-category-card:hover .genre-text{
+  /* font-size: 72px; */
+  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  animation: colorAnimate 20s linear infinite;
+  background-size: 400%;
+  /* padding-top: 50px;
+  padding-bottom: 10px; */
+}
+
+.genres-category-border {
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  border-radius: 15px;
+  height: 100%;
+  animation: colorAnimate 20s linear infinite;
+}
+
+.genres-category-main {
+  background-color: black;
+  border-radius: 20px;
+  height: 100%;
+  font-size: 20px;
+}
