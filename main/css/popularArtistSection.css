@@ -1,0 +1,35 @@
+.popular-artist-section {
+  background-color: rgb(24, 24, 24);
+  padding-top: 20px;
+  padding-bottom: 90px;
+}
+
+.popular-artist-button{
+    font-size: 30px;
+}
+
+.popular-artist-card-border {
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  animation: colorAnimate 20s linear infinite;
+  height: 250px;
+  width: 200px;
+  border-radius: 25px;
+  padding: 3px;
+}
+
+.popular-artist-card {
+  height: 244px;
+  width: 194px;
+  background-color: black;
+  border-radius: 25px;
+  padding: 7px;
+}
+
+.popular-artist-image {
+  background-image: url("../images/1.jpg");
+  height: 230px;
+  width: 180px;
+  background-size: cover;
+  border-radius: 25px;
+}
