@@ -2,9 +2,7 @@ Tasks to do
 ====================
 
 * Explore/Landing Page (1 Hour)
-    * * Genres (1 Hour)
 * Favorites (1 Hour)
-    * * Top Charts (1 Hour)
 * Audio Player (1 Hour)
 * Video Player (1 Hour)
 * Fix Navbar (1 Hour)
@@ -24,3 +22,5 @@ Done
 * Albums (1 Hour)
 * Coming Soon (1 Hour)
 * Artists (1 Hour)
+* Genres (1 Hour)
+* Top Charts (1 Hour)
