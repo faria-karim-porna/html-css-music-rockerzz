@@ -7,6 +7,9 @@ Tasks to do
 * Video Player (1 Hour)
 * Fix Navbar (1 Hour)
 * Footer (1 Hour)
+
+------
+
 * Responsiveness (1 Day)
 * Animation (1 Day)
 
