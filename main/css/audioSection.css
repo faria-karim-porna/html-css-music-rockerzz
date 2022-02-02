@@ -11,7 +11,6 @@ body {
 .audio-player-card {
   background-color: black;
   border-radius: 15px;
-  height: 150px;
 }
 
 .audio-player-card:hover .genre-text {

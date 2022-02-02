@@ -1,0 +1,49 @@
+.cd-disk {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  animation: colorAnimate 20s linear infinite, rotateAnimate 20s linear infinite;
+  transition: transform 0.7s ease-in-out;
+}
+
+.circular-slide-image {
+  width: 295px;
+  height: 295px;
+  background-image: url("../images/1.jpg");
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.cd-disk-border {
+  background-color: black;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.cd-disk-inner {
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  animation: colorAnimate 20s linear infinite;
+}
+
+.cd-disk-hole {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+@keyframes rotateAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
