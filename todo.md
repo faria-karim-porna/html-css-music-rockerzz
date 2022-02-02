@@ -16,7 +16,7 @@ Tasks to do
 Days To Complete
 =========
 
-* 5-8 Days
+* 5-8 Days (Remaining 3-6 Days)
 
 Done
 =====
