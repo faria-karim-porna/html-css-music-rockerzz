@@ -22,3 +22,8 @@
 - Music Visualizer: https://www.youtube.com/watch?v=rY2v7HIWQEI&t=438s
 - Music Visualizer 2: https://www.youtube.com/watch?v=VXWvfrmpapI
 - Music Visualizer 3: https://www.youtube.com/watch?v=uk96O7N1Yo0
+
+---
+
+- Video Player: https://codepen.io/47vigen/pen/KKMEvmm
+- Video Player 2: https://codepen.io/natasha016/pen/abdzdqx
