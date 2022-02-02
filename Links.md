@@ -16,3 +16,9 @@
 ---
 
 - Guitar SVG: https://www.svgrepo.com/svg/54201/guitar
+
+---
+
+- Music Visualizer: https://www.youtube.com/watch?v=rY2v7HIWQEI&t=438s
+- Music Visualizer 2: https://www.youtube.com/watch?v=VXWvfrmpapI
+- Music Visualizer 3: https://www.youtube.com/watch?v=uk96O7N1Yo0
