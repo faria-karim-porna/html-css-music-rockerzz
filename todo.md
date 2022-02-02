@@ -2,9 +2,9 @@ Tasks to do
 ====================
 
 * Explore/Landing Page (1 Hour)
-* Favorites (1 Hour)
-* Audio Player (1 Hour)
-* Video Player (1 Hour)
+* * Favorites (1 Hour)
+* * Audio Player (1 Hour)
+* * Video Player (1 Hour)
 * Fix Navbar (1 Hour)
 * Footer (1 Hour)
 
