@@ -7,15 +7,14 @@ body {
   background-color: rgb(24, 24, 24);
   border-radius: 15px;
 }
-/* genres section */
 
-.genres-category-card {
+.audio-player-card {
   background-color: black;
   border-radius: 15px;
   height: 150px;
 }
 
-.genres-category-card:hover .genre-text {
+.audio-player-card:hover .genre-text {
   background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -24,7 +23,7 @@ body {
   background-size: 400%;
 }
 
-.genres-category-border {
+.audio-player-border {
   background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   background-size: 400%;
   border-radius: 15px;
@@ -32,7 +31,7 @@ body {
   animation: colorAnimate 20s linear infinite;
 }
 
-.genres-category-main {
+.audio-player-main {
   background-color: black;
   border-radius: 20px;
   height: 100%;
@@ -50,63 +49,3 @@ body {
     background-position: 0 0;
   }
 }
-
-/* top chart */
-
-.top-chart-category-card {
-  background-color: black;
-  border-radius: 15px;
-  height: 84px;
-}
-
-.top-chart-category-border {
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
-  background-size: 400%;
-  border-radius: 15px;
-  height: 100%;
-  animation: colorAnimate 20s linear infinite;
-}
-
-.top-chart-category-main {
-  background-color: black;
-  border-radius: 20px;
-  height: 100%;
-  font-size: 20px;
-}
-
-.top-chart-image {
-  background-image: url("../images/1.jpg");
-  height: 65px;
-  width: 65px;
-  background-size: cover;
-  border-radius: 10px;
-}
-
-.top-chart-button {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  background: black;
-  background-size: 400%;
-  animation: colorAnimate 20s linear infinite;
-}
-
-.top-chart-button:hover {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
-  background-size: 400%;
-  animation: colorAnimate 20s linear infinite;
-  color: black;
-}
-
-/* .top-chart-button:hover .fa-play{
-      color: black;
-      border-radius: 50%;
-      height: 50px;
-      width: 50px;
-      background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
-      background-size: 400%;
-      animation: colorAnimate 20s linear infinite;
-  } */
