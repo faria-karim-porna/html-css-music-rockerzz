@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>RockerZZ</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/navbar.css" rel="stylesheet" />
+    <link href="css/videoSection.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/videoPlayerSection.css" />
+    <link rel="stylesheet" href="css/playlistSection.css" />
+    <link rel="stylesheet" href="css/popularVideoAlbumSection.css" />
+  </head>
+
+  <body>
+    <!-- navbar start -->
+    <header class="header-section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom-nav-container d-flex justify-content-between">
+          <a class="navbar-brand" href="index.html">
+            <span> RockerZZ </span>
+          </a>
+          <div class="" id="">
+            <div class="user-option d-flex align-items-center">
+              <a href="">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>Login</span>
+              </a>
+              <form class="form-inline">
+                <input type="search" placeholder="Search" />
+                <button class="btn nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+            <div class="custom-menu-btn">
+              <button onclick="openNav()">
+                <img src="images/menu.png" alt="" />
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="testimonial.html">Testimonial</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- navbar end -->
+
+    <div class="video-page p-5">
+      <!-- video player and playlist section start -->
+      <div class="d-flex video-section">
+        <!-- video player section start -->
+        <div class="w-50">
+          <div class="">
+            <div class="sub-section-name pl-4">Now Playing...</div>
+            <!-- video player section card start -->
+            <div class="w-100 pt-4 pb-2 pr-4 pl-2">
+              <div class="video-player-card p-1">
+                <div class="video-player-border">
+                  <div class="video-player-main d-flex justify-content-center align-items-center text-center pt-4 pb-4">
+                    <div class="w-75 video-player-section">
+                      <div class="d-flex justify-content-center">
+                        <!-- main  video start -->
+                        <video
+                          class="main-video"
+                          autoplay
+                          muted
+                          poster="images/1.jpg"
+                        >
+                          >
+                          <source
+                            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                        <!-- main video end -->
+                      </div>
+                      <!-- video player actions start -->
+                      <div class="video-player-actions">
+                        <input type="range" name="" id="" min="0" max="100" value="30" step="1" />
+                        <div class="range-fill"></div>
+                        <!-- video player buttons start -->
+                        <div class="video-player-buttons d-flex justify-content-between align-items-center">
+                          <div class="w-25"><i class="fa fa-heart"></i></div>
+                          <div class="d-flex align-items-center">
+                            <div><i class="fa fa-step-backward"></i></div>
+                            <div><i class="fa fa-play-circle"></i></div>
+                            <div><i class="fa fa-step-forward"></i></div>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-end w-25">
+                            <i class="fa fa-volume-up mr-2"></i>
+                            <div class="volume-range">
+                              <input type="range" name="" id="" min="0" max="100" value="30" step="1" />
+                              <div class="volume-range-fill"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- video player buttons end -->
+                      </div>
+                      <!-- video player actions end -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- video player section card end -->
+          </div>
+        </div>
+        <!-- video player section end -->
+        <!-- playlist section start -->
+        <div class="w-50">
+          <div class="">
+            <div class="sub-section-name pl-4">Playlist</div>
+            <!-- playlist section card start -->
+            <div class="w-100 pt-4 pb-2 pr-4 pl-4">
+              <div class="playlist-card p-1">
+                <div class="playlist-border">
+                  <div class="playlist-main d-flex justify-content-center">
+                    <div class="d-flex align-items-center text-center w-90">
+                      <div class="top-chart-text w-5 d-flex justify-content-center">1</div>
+                      <div class="w-20 d-flex justify-content-center"><div class="top-chart-image"></div></div>
+                      <div class="top-chart-text w-70">
+                        <div>Video Album Name</div>
+                        <div>Song Name - Artist Name</div>
+                      </div>
+                      <div class="top-chart-button d-flex align-items-center justify-content-center"><i class="fa fa-play"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- playlist section card end -->
+            <!-- playlist section card start -->
+            <div class="w-100 pt-2 pb-2 pr-4 pl-4">
+              <div class="playlist-card p-1">
+                <div class="playlist-border">
+                  <div class="playlist-main d-flex justify-content-center">
+                    <div class="d-flex align-items-center text-center w-90">
+                      <div class="top-chart-text w-5 d-flex justify-content-center">1</div>
+                      <div class="w-20 d-flex justify-content-center"><div class="top-chart-image"></div></div>
+                      <div class="top-chart-text w-70">
+                        <div>Video Album Name</div>
+                        <div>Song Name - Artist Name</div>
+                      </div>
+                      <div class="top-chart-button d-flex align-items-center justify-content-center"><i class="fa fa-play"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- playlist section card end -->
+            <!-- playlist section card start -->
+            <div class="w-100 pt-2 pb-2 pr-4 pl-4">
+              <div class="playlist-card p-1">
+                <div class="playlist-border">
+                  <div class="playlist-main d-flex justify-content-center">
+                    <div class="d-flex align-items-center text-center w-90">
+                      <div class="top-chart-text w-5 d-flex justify-content-center">1</div>
+                      <div class="w-20 d-flex justify-content-center"><div class="top-chart-image"></div></div>
+                      <div class="top-chart-text w-70">
+                        <div>Video Album Name</div>
+                        <div>Song Name - Artist Name</div>
+                      </div>
+                      <div class="top-chart-button d-flex align-items-center justify-content-center"><i class="fa fa-play"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- playlist section card end -->
+            <!-- playlist section card start -->
+            <div class="w-100 pt-2 pb-2 pr-4 pl-4">
+              <div class="playlist-card p-1">
+                <div class="playlist-border">
+                  <div class="playlist-main d-flex justify-content-center">
+                    <div class="d-flex align-items-center text-center w-90">
+                      <div class="top-chart-text w-5 d-flex justify-content-center">1</div>
+                      <div class="w-20 d-flex justify-content-center"><div class="top-chart-image"></div></div>
+                      <div class="top-chart-text w-70">
+                        <div>Video Album Name</div>
+                        <div>Song Name - Artist Name</div>
+                      </div>
+                      <div class="top-chart-button d-flex align-items-center justify-content-center"><i class="fa fa-play"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- playlist section card end -->
+            <!-- playlist section card start -->
+            <div class="w-100 pt-2 pb-4 pr-4 pl-4">
+              <div class="playlist-card p-1">
+                <div class="playlist-border">
+                  <div class="playlist-main d-flex justify-content-center">
+                    <div class="d-flex align-items-center text-center w-90">
+                      <div class="top-chart-text w-5 d-flex justify-content-center">1</div>
+                      <div class="w-20 d-flex justify-content-center"><div class="top-chart-image"></div></div>
+                      <div class="top-chart-text w-70">
+                        <div>Video Album Name</div>
+                        <div>Song Name - Artist Name</div>
+                      </div>
+                      <div class="top-chart-button d-flex align-items-center justify-content-center"><i class="fa fa-play"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- playlist section card end -->
+          </div>
+        </div>
+        <!-- playlist section end -->
+      </div>
+      <!-- video player and playlist section end -->
+
+      <!-- popular video album section start -->
+      <div>
+        <div class="sub-section-name w-100 text-center">Popular Video Albums</div>
+        <div class="w-100 d-flex justify-content-center mt-5">
+          <div class="w-75 d-flex justify-content-around">
+            <!-- video album card start -->
+            <div class="video-album-card-border">
+              <div class="video-album-card">
+                <div class="d-flex justify-content-center"><img src="images/1.jpg" alt="" class="img-fluid album-image" /></div>
+                <div class="album-detail">
+                  <div class="text-center album-text">Song Name - Video Album Name</div>
+                  <div class="d-flex">
+                    <div class="text-center album-text mr-3">Artists Name</div>
+                    <div class="d-flex justify-content-center album-genre-border">
+                      <div class="album-genre"><div class="text-center album-genre-text">Genre Name</div></div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center pt-4"><i class="fa fa-play-circle"></i></div>
+                </div>
+              </div>
+            </div>
+            <!-- video album card end -->
+            <!-- video album card start -->
+            <div class="video-album-card-border">
+              <div class="video-album-card">
+                <div class="d-flex justify-content-center"><img src="images/1.jpg" alt="" class="img-fluid album-image" /></div>
+                <div class="album-detail">
+                  <div class="text-center album-text">Song Name - Video Album Name</div>
+                  <div class="d-flex">
+                    <div class="text-center album-text mr-3">Artists Name</div>
+                    <div class="d-flex justify-content-center album-genre-border">
+                      <div class="album-genre"><div class="text-center album-genre-text">Genre Name</div></div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center pt-4">
+                    <i class="fa fa-play-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- video album card end -->
+            <!-- video album card start -->
+            <div class="video-album-card-border">
+              <div class="video-album-card">
+                <div class="d-flex justify-content-center"><img src="images/1.jpg" alt="" class="img-fluid album-image" /></div>
+                <div class="album-detail">
+                  <div class="text-center album-text">Song Name - Video Album Name</div>
+                  <div class="d-flex">
+                    <div class="text-center album-text mr-3">Artists Name</div>
+                    <div class="d-flex justify-content-center album-genre-border">
+                      <div class="album-genre"><div class="text-center album-genre-text">Genre Name</div></div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center pt-4"><i class="fa fa-play-circle"></i></div>
+                </div>
+              </div>
+            </div>
+            <!-- video album card end -->
+          </div>
+        </div>
+      </div>
+      <!-- popular video album section end -->
+    </div>
+
+    <!-- Bootstrap JS -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>

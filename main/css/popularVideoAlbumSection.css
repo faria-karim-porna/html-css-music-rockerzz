@@ -1,0 +1,71 @@
+.video-album-card-border {
+    background: white;
+    height: 500px;
+    width: 350px;
+    border-radius: 25px;
+    padding: 3px;
+  }
+  
+  .video-album-card-border:hover {
+    background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+    background-size: 400%;
+    animation: colorAnimate 20s linear infinite;
+    transform: scale(1.1);
+  }
+  
+  .video-album-card {
+    height: 494px;
+    width: 344px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 25px;
+    padding: 30px;
+  }
+  
+  .album-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  
+  .album-detail {
+    margin-top: 20px;
+  }
+  
+  .album-text {
+    font-size: 20px;
+  }
+  
+  .album-genre-border {
+    background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+    background-size: 400%;
+    padding: 1px;
+    border-radius: 50px;
+    animation: colorAnimate 20s linear infinite;
+  }
+  
+  .album-genre {
+    padding: 5px 15px;
+    border-radius: 50px;
+    width: fit-content;
+    background-color: black;
+  }
+  
+  .album-genre-text {
+    font-size: 15px;
+    background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    animation: colorAnimate 20s linear infinite;
+    background-size: 400%;
+  }
+  
+  .fa-play-circle {
+    font-size: 65px;
+    background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorAnimate 20s linear infinite;
+    background-size: 400%;
+  }
+  
