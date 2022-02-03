@@ -1,3 +1,6 @@
+.audio-player-section {
+  z-index: 0;
+}
 .cd-disk {
   width: 300px;
   height: 300px;
@@ -37,6 +40,68 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  outline: none;
+  height: 2px;
+  z-index: 1;
+  background: linear-gradient(90deg, transparent 30%, white 30.1%);
+}
+
+.range-fill {
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  animation: colorAnimate 20s linear infinite;
+  height: 2px;
+  position: relative;
+  top: -9px;
+  z-index: -1;
+}
+
+.fa-heart{
+  color: red;
+  font-size: 25px;
+}
+
+.fa-step-backward, .fa-step-forward{
+  font-size: 30px;
+}
+
+.fa-play-circle {
+  font-size: 65px;
+  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colorAnimate 20s linear infinite;
+  background-size: 400%;
+  margin: 0px 10px;
+}
+
+.volume-range{
+  position: relative;
+  top: -6px;
+}
+
+.volume-range-fill {
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  animation: colorAnimate 20s linear infinite;
+  height: 2px;
+  position: relative;
+  top: -9px;
+  z-index: -1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: red;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 @keyframes rotateAnimate {

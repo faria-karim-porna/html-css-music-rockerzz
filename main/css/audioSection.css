@@ -11,15 +11,7 @@ body {
 .audio-player-card {
   background-color: black;
   border-radius: 15px;
-}
-
-.audio-player-card:hover .genre-text {
-  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
-  animation: colorAnimate 20s linear infinite;
-  background-size: 400%;
+  z-index: -5;
 }
 
 .audio-player-border {
@@ -28,6 +20,7 @@ body {
   border-radius: 15px;
   height: 100%;
   animation: colorAnimate 20s linear infinite;
+  z-index: -4;
 }
 
 .audio-player-main {
@@ -35,6 +28,7 @@ body {
   border-radius: 20px;
   height: 100%;
   font-size: 20px;
+  z-index: -3;
 }
 
 @keyframes colorAnimate {
