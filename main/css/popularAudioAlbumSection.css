@@ -1,4 +1,4 @@
-.album-card-border {
+.audio-album-card-border {
   background: white;
   height: 500px;
   width: 350px;
@@ -6,14 +6,14 @@
   padding: 3px;
 }
 
-.album-card-border:hover {
+.audio-album-card-border:hover {
   background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   background-size: 400%;
   animation: colorAnimate 20s linear infinite;
   transform: scale(1.1);
 }
 
-.album-card {
+.audio-album-card {
   height: 494px;
   width: 344px;
   background-color: rgb(24, 24, 24);
