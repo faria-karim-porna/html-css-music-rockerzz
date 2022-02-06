@@ -28,27 +28,14 @@ function start() {
   audio.loop = true;
   audio.autoplay = true;
   audio.crossOrigin = "anonymous";
+  audio.src = "https://greggman.github.io/doodles/sounds/DOCTOR VOX - Level Up.mp3";
 
   audio.addEventListener("canplay", function () {
-    try {
       var source = context.createMediaElementSource(audio);
       source.connect(analyser);
       analyser.connect(context.destination);
-    } catch (e) {
-      log(e.toString());
-    }
   });
-  audio.addEventListener("error", function (e) {
-    log(e.toString());
-  });
-  audio.src = "https://greggman.github.io/doodles/sounds/DOCTOR VOX - Level Up.mp3";
   audio.play();
-
-  function log() {
-    var elem = document.createElement("div");
-    elem.textContent = Array.prototype.join.call(arguments, " ");
-    document.body.appendChild(elem);
-  }
 }
 
 var clickElem = document.querySelector("button");
