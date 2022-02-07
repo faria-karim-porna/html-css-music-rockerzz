@@ -3,14 +3,10 @@ body {
 }
 
 .background {
-  /* position: absolute; */
-
   top: -50px;
   right: -50px;
   bottom: -50px;
   left: -50px;
-
-  background-image: url("../audio-demo-1/img/img1.jpg");
   background-position: center center;
   background-size: cover;
 
@@ -18,12 +14,9 @@ body {
 }
 
 .track-title {
-  /* position: absolute; */
-
   top: 200px;
   right: 0;
   left: 0;
-
   color: white;
   font-family: Calibri;
   font-size: 100px;
@@ -32,7 +25,6 @@ body {
 
 .visualizer-container {
   position: absolute;
-
   bottom: 450px;
   right: 0;
   left: 0;
@@ -46,3 +38,4 @@ body {
   margin: 0 2px;
   width: 25px;
 }
+
