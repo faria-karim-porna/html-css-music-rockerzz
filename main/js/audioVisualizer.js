@@ -1,4 +1,10 @@
 let isPlaying = false;
+let audioSource;
+let analayzer;
+
+// The number of bars that should be displayed
+const NBR_OF_BARS = 20;
+
 
 function playSong() {
   isPlaying = true;
@@ -11,9 +17,6 @@ function playSong() {
   icon.classList.remove("fa-pause-circle");
   icon.classList.add("fa-play-circle");
 
-  // The number of bars that should be displayed
-  const NBR_OF_BARS = 20;
-
   // Get the audio element tag
   const audio = document.querySelector("audio");
   // audio.load();
@@ -22,14 +25,15 @@ function playSong() {
   const ctx = new AudioContext();
 
   // Create an audio source
-  const audioSource = ctx.createMediaElementSource(audio);
+  if (audioSource === undefined) {
+    audioSource = ctx.createMediaElementSource(audio);
+    // Create an audio analyzer
+    analayzer = ctx.createAnalyser();
 
-  // Create an audio analyzer
-  const analayzer = ctx.createAnalyser();
-
-  // Connect the source, to the analyzer, and then back the the context's destination
-  audioSource.connect(analayzer);
-  audioSource.connect(ctx.destination);
+    // Connect the source, to the analyzer, and then back the the context's destination
+    audioSource.connect(analayzer);
+    audioSource.connect(ctx.destination);
+  }
 
   // Print the analyze frequencies
   const frequencyData = new Uint8Array(analayzer.frequencyBinCount);
@@ -91,6 +95,12 @@ function pauseSong() {
   const icon = document.getElementById("play-pause-icon");
   icon.classList.remove("fa-play-circle");
   icon.classList.add("fa-pause-circle");
+
+  // Remove a set of pre-defined bars
+  for (let i = 0; i < NBR_OF_BARS; i++) {
+    const bar = document.getElementById("bar" + i);
+    bar.remove();
+  }
 
   // Get the audio element tag
   const audio = document.querySelector("audio");
