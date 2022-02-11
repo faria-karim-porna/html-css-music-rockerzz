@@ -1,7 +1,16 @@
+let isPlaying = false;
+
 function playSong() {
+  isPlaying = true;
   //  Add CD rotation
   const cdDisk = document.getElementById("cd-disk");
   cdDisk.classList.add("cd-disk-rotation");
+
+  //  Remove Pause Icon and Add Play Icon
+  const icon = document.getElementById("play-pause-icon");
+  icon.classList.remove("fa-pause-circle");
+  icon.classList.add("fa-play-circle");
+
   // The number of bars that should be displayed
   const NBR_OF_BARS = 20;
 
@@ -70,4 +79,24 @@ function playSong() {
 
   audio.volume = 0.1;
   audio.play();
+}
+
+function pauseSong() {
+  isPlaying = false;
+  //  Remove CD rotation
+  const cdDisk = document.getElementById("cd-disk");
+  cdDisk.classList.remove("cd-disk-rotation");
+
+  //  Remove Play Icon and Add Pause Icon
+  const icon = document.getElementById("play-pause-icon");
+  icon.classList.remove("fa-play-circle");
+  icon.classList.add("fa-pause-circle");
+
+  // Get the audio element tag
+  const audio = document.querySelector("audio");
+  audio.pause();
+}
+
+function playPause() {
+  isPlaying ? pauseSong() : playSong();
 }

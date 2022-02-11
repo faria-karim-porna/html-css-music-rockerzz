@@ -115,6 +115,11 @@ input[type="range"] {
   font-size: 30px;
 }
 
+.fa-pause-circle{
+  margin: 0px 10px;
+  font-size: 65px;
+}
+
 .fa-play-circle {
   font-size: 65px;
   background: -webkit-linear-gradient(
