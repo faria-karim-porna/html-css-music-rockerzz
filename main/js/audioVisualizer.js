@@ -1,6 +1,6 @@
 function playSong() {
   // The number of bars that should be displayed
-  const NBR_OF_BARS = 50;
+  const NBR_OF_BARS = 20;
 
   // Get the audio element tag
   const audio = document.querySelector("audio");
@@ -45,8 +45,8 @@ function playSong() {
       // the first NBR_OF_BARS of values, but try and grab frequencies over the whole spectrum
       const index = (i + 10) * 2;
       // fd is a frequency value between 0 and 255
-      const fd = frequencyData[index];
-
+      let fd = frequencyData[index];
+      fd = fd/2;
       // Fetch the bar DIV element
       const bar = document.querySelector("#bar" + i);
       if (!bar) {
@@ -55,7 +55,7 @@ function playSong() {
 
       // If fd is undefined, default to 0, then make sure fd is at least 4
       // This will make make a quiet frequency at least 4px high for visual effects
-      const barHeight = Math.max(4, fd || 0);
+      const barHeight = Math.max(1, fd || 0);
       bar.style.height = barHeight + "px";
     }
 

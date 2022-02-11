@@ -42,6 +42,10 @@
   border-radius: 50%;
 }
 
+.audio-player-actions{
+  margin-top: 100px;
+}
+
 input[type="range"] {
   -webkit-appearance: none;
   width: 100%;
