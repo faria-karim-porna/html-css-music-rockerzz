@@ -1,4 +1,7 @@
 function playSong() {
+  //  Add CD rotation
+  const cdDisk = document.getElementById("cd-disk");
+  cdDisk.classList.add("cd-disk-rotation");
   // The number of bars that should be displayed
   const NBR_OF_BARS = 20;
 
@@ -46,7 +49,7 @@ function playSong() {
       const index = (i + 10) * 2;
       // fd is a frequency value between 0 and 255
       let fd = frequencyData[index];
-      fd = fd/2;
+      fd = fd / 2;
       // Fetch the bar DIV element
       const bar = document.querySelector("#bar" + i);
       if (!bar) {
