@@ -118,16 +118,22 @@ function changeDuration() {
   let durationSlider = document.querySelector("#duration-slider");
   const sliderPosition = audio.duration * (durationSlider.value / 100);
   audio.currentTime = sliderPosition;
+  const sliderPoint = audio.currentTime * (100 / audio.duration);
+  // change slider fill
+  durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPoint}%, white ${sliderPoint + 0.1}%)`;
 }
 
 function upDateDuration() {
   // Get the audio element tag
   const audio = document.querySelector("audio");
 
+  //change slider based on audio time
   let durationSlider = document.querySelector("#duration-slider");
   if (!isNaN(audio.duration)) {
     const sliderPosition = audio.currentTime * (100 / audio.duration);
     durationSlider.value = sliderPosition;
+    // change slider fill
+    durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPosition}%, white ${sliderPosition + 0.1}%)`;
   }
 }
 
