@@ -5,7 +5,6 @@ let analayzer;
 // The number of bars that should be displayed
 const NBR_OF_BARS = 20;
 
-
 function playSong() {
   isPlaying = true;
   //  Add CD rotation
@@ -110,3 +109,26 @@ function pauseSong() {
 function playPause() {
   isPlaying ? pauseSong() : playSong();
 }
+
+function changeDuration() {
+  // Get the audio element tag
+  const audio = document.querySelector("audio");
+
+  //change audio time based on slider
+  let durationSlider = document.querySelector("#duration-slider");
+  const sliderPosition = audio.duration * (durationSlider.value / 100);
+  audio.currentTime = sliderPosition;
+}
+
+function upDateDuration() {
+  // Get the audio element tag
+  const audio = document.querySelector("audio");
+
+  let durationSlider = document.querySelector("#duration-slider");
+  if (!isNaN(audio.duration)) {
+    const sliderPosition = audio.currentTime * (100 / audio.duration);
+    durationSlider.value = sliderPosition;
+  }
+}
+
+setInterval(upDateDuration, 1000);
