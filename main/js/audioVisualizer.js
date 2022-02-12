@@ -13,8 +13,8 @@ function playSong() {
 
   //  Remove Pause Icon and Add Play Icon
   const icon = document.getElementById("play-pause-icon");
-  icon.classList.remove("fa-pause-circle");
-  icon.classList.add("fa-play-circle");
+  icon.classList.remove("fa-play-circle");
+  icon.classList.add("fa-pause-circle");
 
   // Get the audio element tag
   const audio = document.querySelector("audio");
@@ -61,7 +61,7 @@ function playSong() {
       const index = (i + 10) * 2;
       // fd is a frequency value between 0 and 255
       let fd = frequencyData[index];
-      fd = fd / 2;
+      fd = fd / 3;
       // Fetch the bar DIV element
       const bar = document.querySelector("#bar" + i);
       if (!bar) {
@@ -92,8 +92,8 @@ function pauseSong() {
 
   //  Remove Play Icon and Add Pause Icon
   const icon = document.getElementById("play-pause-icon");
-  icon.classList.remove("fa-play-circle");
-  icon.classList.add("fa-pause-circle");
+  icon.classList.remove("fa-pause-circle");
+  icon.classList.add("fa-play-circle");
 
   // Remove a set of pre-defined bars
   for (let i = 0; i < NBR_OF_BARS; i++) {
@@ -123,6 +123,19 @@ function changeDuration() {
   durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPoint}%, white ${sliderPoint + 0.1}%)`;
 }
 
+function changeVolume() {
+  // Get the audio element tag
+  const audio = document.querySelector("audio");
+
+  //change audio volume based on slider
+  let volumeSlider = document.querySelector("#volume-slider");
+  const volumeSliderPosition = volumeSlider.value / 100;
+  audio.volume = volumeSliderPosition;
+  const volumeSliderPoint = volumeSliderPosition * 100;
+  // change volume slider fill
+  volumeSlider.style.background = `linear-gradient(90deg, transparent ${volumeSliderPoint}%, white ${volumeSliderPoint + 0.1}%)`;
+}
+
 function upDateDuration() {
   // Get the audio element tag
   const audio = document.querySelector("audio");
@@ -138,3 +151,9 @@ function upDateDuration() {
 }
 
 setInterval(upDateDuration, 1000);
+
+// change volume slider fill
+const volumeSlider = document.querySelector("#volume-slider");
+const volumeSliderPosition = volumeSlider.value / 100;
+const volumeSliderPoint = volumeSliderPosition * 100;
+volumeSlider.style.background = `linear-gradient(90deg, transparent ${volumeSliderPoint}%, white ${volumeSliderPoint + 0.1}%)`;
