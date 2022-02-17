@@ -70,16 +70,22 @@
 }
 
 .fa-heart {
-  color: red;
   font-size: 25px;
+  cursor: pointer;
+}
+
+.add-to-favorite{
+  color: red;
 }
 
 .fa-step-backward,
 .fa-step-forward {
+  cursor: pointer;
   font-size: 30px;
 }
 
 .fa-pause-circle {
+  cursor: pointer;
   font-size: 65px;
   background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   -webkit-background-clip: text;
@@ -90,6 +96,7 @@
 }
 
 .fa-play-circle {
+  cursor: pointer;
   font-size: 65px;
   background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   -webkit-background-clip: text;

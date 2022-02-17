@@ -120,7 +120,9 @@ function changeDuration() {
   audio.currentTime = sliderPosition;
   const sliderPoint = audio.currentTime * (100 / audio.duration);
   // change slider fill
-  durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPoint}%, white ${sliderPoint + 0.1}%)`;
+  durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPoint}%, white ${
+    sliderPoint + 0.1
+  }%)`;
 }
 
 function changeVolume() {
@@ -133,7 +135,9 @@ function changeVolume() {
   audio.volume = volumeSliderPosition;
   const volumeSliderPoint = volumeSliderPosition * 100;
   // change volume slider fill
-  volumeSlider.style.background = `linear-gradient(90deg, transparent ${volumeSliderPoint}%, white ${volumeSliderPoint + 0.1}%)`;
+  volumeSlider.style.background = `linear-gradient(90deg, transparent ${volumeSliderPoint}%, white ${
+    volumeSliderPoint + 0.1
+  }%)`;
 }
 
 function upDateDuration() {
@@ -146,8 +150,56 @@ function upDateDuration() {
     const sliderPosition = audio.currentTime * (100 / audio.duration);
     durationSlider.value = sliderPosition;
     // change slider fill
-    durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPosition}%, white ${sliderPosition + 0.1}%)`;
+    durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPosition}%, white ${
+      sliderPosition + 0.1
+    }%)`;
   }
+}
+
+function forwardDuration() {
+  // Get the audio element tag
+  const audio = document.querySelector("audio");
+
+  //change slider based on audio time
+  let durationSlider = document.querySelector("#duration-slider");
+  if (!isNaN(audio.duration)) {
+    // to speed up the audio
+    // audio.playbackRate = audio.playbackRate + 0.5;
+    // forward the current audio for 10s
+    audio.currentTime = audio.currentTime + 10;
+    const sliderPosition = audio.currentTime * (100 / audio.duration);
+    durationSlider.value = sliderPosition;
+    // change slider fill
+    durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPosition}%, white ${
+      sliderPosition + 0.1
+    }%)`;
+  }
+}
+
+function backwardDuration() {
+  // Get the audio element tag
+  const audio = document.querySelector("audio");
+
+  //change slider based on audio time
+  let durationSlider = document.querySelector("#duration-slider");
+  if (!isNaN(audio.duration)) {
+    // to speed down the audio
+    // audio.playbackRate = audio.playbackRate - 0.5;
+    // backward the current audio for 10s
+    audio.currentTime = audio.currentTime - 10;
+    const sliderPosition = audio.currentTime * (100 / audio.duration);
+    durationSlider.value = sliderPosition;
+    // change slider fill
+    durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPosition}%, white ${
+      sliderPosition + 0.1
+    }%)`;
+  }
+}
+
+function addToFavorite() {
+  document
+    .getElementById("favorite")
+    .classList.toggle("add-to-favorite");
 }
 
 setInterval(upDateDuration, 1000);
@@ -156,4 +208,6 @@ setInterval(upDateDuration, 1000);
 const volumeSlider = document.querySelector("#volume-slider");
 const volumeSliderPosition = volumeSlider.value / 100;
 const volumeSliderPoint = volumeSliderPosition * 100;
-volumeSlider.style.background = `linear-gradient(90deg, transparent ${volumeSliderPoint}%, white ${volumeSliderPoint + 0.1}%)`;
+volumeSlider.style.background = `linear-gradient(90deg, transparent ${volumeSliderPoint}%, white ${
+  volumeSliderPoint + 0.1
+}%)`;
