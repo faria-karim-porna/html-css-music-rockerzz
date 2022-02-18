@@ -4,12 +4,27 @@
   padding-bottom: 90px;
 }
 
-.popular-artist-button{
-    font-size: 30px;
+.popular-artist-button {
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .popular-artist-card-border {
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
+  margin-left: 5px;
+  margin-right: 5px;
   background-size: 400%;
   animation: colorAnimate 20s linear infinite;
   height: 250px;
@@ -33,3 +48,44 @@
   background-size: cover;
   border-radius: 25px;
 }
+
+.popular-artist-cards{
+  width: 1256px;
+  overflow-x: hidden;
+}
+
+/* .popular-artist-slider {
+  animation: popular-artist-slider-animation 60s ease 0s infinite;
+}
+@keyframes popular-artist-slider-animation {
+  5%{
+    transform: translateX(10%);
+  }
+  10%{
+    transform: translateX(20%);
+  }
+  15%{
+    transform: translateX(30%);
+  }
+  20%{
+    transform: translateX(40%);
+  }
+  25% {
+    transform: translateX(50%);
+  }
+  30%{
+    transform: translateX(60%);
+  }
+  35%{
+    transform: translateX(70%);
+  }
+  40%{
+    transform: translateX(80%);
+  }
+  45%{
+    transform: translateX(90%);
+  }
+  50%{
+    transform: translateX(100%);
+  }
+} */
