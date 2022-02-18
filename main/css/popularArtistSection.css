@@ -49,43 +49,89 @@
   border-radius: 25px;
 }
 
-.popular-artist-cards{
+.popular-artist-cards {
   width: 1256px;
+  position: relative;
+  height: 250px;
   overflow-x: hidden;
 }
 
-/* .popular-artist-slider {
+.popular-artist-slider {
+  position: absolute;
+  right: 0%;
   animation: popular-artist-slider-animation 60s ease 0s infinite;
 }
 @keyframes popular-artist-slider-animation {
-  5%{
-    transform: translateX(10%);
+  4% {
+    transform: translateX(210px);
   }
-  10%{
-    transform: translateX(20%);
+  8% {
+    transform: translateX(210px);
   }
-  15%{
-    transform: translateX(30%);
+  12% {
+    transform: translateX(420px);
   }
-  20%{
-    transform: translateX(40%);
+  16% {
+    transform: translateX(420px);
   }
-  25% {
-    transform: translateX(50%);
+  20% {
+    transform: translateX(630px);
   }
-  30%{
-    transform: translateX(60%);
+  24% {
+    transform: translateX(630px);
   }
-  35%{
-    transform: translateX(70%);
+  28% {
+    transform: translateX(840px);
   }
-  40%{
-    transform: translateX(80%);
+  32% {
+    transform: translateX(840px);
   }
-  45%{
-    transform: translateX(90%);
+  36% {
+    transform: translateX(1050px);
   }
-  50%{
-    transform: translateX(100%);
+  40% {
+    transform: translateX(1050px);
   }
-} */
+  44% {
+    transform: translateX(1260px);
+  }
+  50% {
+    transform: translateX(1260px);
+  }
+  54% {
+    transform: translateX(1050px);
+  }
+  58% {
+    transform: translateX(1050px);
+  }
+  62% {
+    transform: translateX(840px);
+  }
+  66% {
+    transform: translateX(840px);
+  }
+  70% {
+    transform: translateX(630px);
+  }
+  74% {
+    transform: translateX(630px);
+  }
+  78% {
+    transform: translateX(420px);
+  }
+  82% {
+    transform: translateX(420px);
+  }
+  86% {
+    transform: translateX(210px);
+  }
+  90% {
+    transform: translateX(210px);
+  }
+  94% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
