@@ -5,8 +5,8 @@
 
 .album-card-border {
   background: white;
-  height: 500px;
-  width: 350px;
+  width: 30%;
+  padding: 2px;
   border-radius: 25px;
   padding: 3px;
 }
@@ -19,11 +19,9 @@
 }
 
 .album-card {
-  height: 494px;
-  width: 344px;
   background-color: rgb(24, 24, 24);
   border-radius: 25px;
-  padding: 30px;
+  padding: 15px;
 }
 
 .album-image {
