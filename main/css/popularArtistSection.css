@@ -10,19 +10,7 @@
 }
 
 .popular-artist-card-border {
-  background: linear-gradient(
-    45deg,
-    #fb0094,
-    #00f,
-    #0f0,
-    #ff0,
-    #f00,
-    #fb0094,
-    #00f,
-    #0f0,
-    #ff0,
-    #f00
-  );
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   margin-left: 5px;
   margin-right: 5px;
   background-size: 400%;
@@ -58,80 +46,5 @@
 
 .popular-artist-slider {
   position: absolute;
-  right: 0%;
-  animation: popular-artist-slider-animation 60s ease 0s infinite;
-}
-@keyframes popular-artist-slider-animation {
-  4% {
-    transform: translateX(210px);
-  }
-  8% {
-    transform: translateX(210px);
-  }
-  12% {
-    transform: translateX(420px);
-  }
-  16% {
-    transform: translateX(420px);
-  }
-  20% {
-    transform: translateX(630px);
-  }
-  24% {
-    transform: translateX(630px);
-  }
-  28% {
-    transform: translateX(840px);
-  }
-  32% {
-    transform: translateX(840px);
-  }
-  36% {
-    transform: translateX(1050px);
-  }
-  40% {
-    transform: translateX(1050px);
-  }
-  44% {
-    transform: translateX(1260px);
-  }
-  50% {
-    transform: translateX(1260px);
-  }
-  54% {
-    transform: translateX(1050px);
-  }
-  58% {
-    transform: translateX(1050px);
-  }
-  62% {
-    transform: translateX(840px);
-  }
-  66% {
-    transform: translateX(840px);
-  }
-  70% {
-    transform: translateX(630px);
-  }
-  74% {
-    transform: translateX(630px);
-  }
-  78% {
-    transform: translateX(420px);
-  }
-  82% {
-    transform: translateX(420px);
-  }
-  86% {
-    transform: translateX(210px);
-  }
-  90% {
-    transform: translateX(210px);
-  }
-  94% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
+  right: 0px;
 }
