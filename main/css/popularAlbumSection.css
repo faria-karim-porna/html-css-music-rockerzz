@@ -12,7 +12,19 @@
 }
 
 .album-card-border:hover {
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   background-size: 400%;
   animation: colorAnimate 20s linear infinite;
   transform: scale(1.1);
@@ -39,7 +51,19 @@
 }
 
 .album-genre-border {
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   background-size: 400%;
   padding: 1px;
   border-radius: 50px;
@@ -55,7 +79,19 @@
 
 .album-genre-text {
   font-size: 15px;
-  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: -webkit-linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
@@ -65,9 +101,36 @@
 
 .fa-play-circle {
   font-size: 65px;
-  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: -webkit-linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: colorAnimate 20s linear infinite;
   background-size: 400%;
+}
+.popular-album-slider-section {
+  width: 1050px;
+  position: relative;
+  height: 520px;
+  overflow-x: hidden;
+}
+
+.popular-album-slider {
+  position: absolute;
+  right: 0px;
+}
+
+.album-group{
+  width: 1050px;
 }
