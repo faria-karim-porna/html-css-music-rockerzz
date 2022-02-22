@@ -1,6 +1,8 @@
 let isPlayingVideo = false;
 // Get the video element tag
 const video = document.querySelector("video");
+video.src = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+video.poster = "images/1.jpg";
 
 function playVideo() {
   isPlayingVideo = true;
@@ -36,9 +38,7 @@ function changeVideoDuration() {
   video.currentTime = sliderPosition;
   const sliderPoint = video.currentTime * (100 / video.duration);
   // change slider fill
-  durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPoint}%, white ${
-    sliderPoint + 0.1
-  }%)`;
+  durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPoint}%, white ${sliderPoint + 0.1}%)`;
 }
 
 function changeVideoVolume() {
@@ -48,9 +48,7 @@ function changeVideoVolume() {
   video.volume = volumeSliderPosition;
   const volumeSliderPoint = volumeSliderPosition * 100;
   // change volume slider fill
-  volumeSlider.style.background = `linear-gradient(90deg, transparent ${volumeSliderPoint}%, white ${
-    volumeSliderPoint + 0.1
-  }%)`;
+  volumeSlider.style.background = `linear-gradient(90deg, transparent ${volumeSliderPoint}%, white ${volumeSliderPoint + 0.1}%)`;
 }
 
 function upDateDurationVideo() {
@@ -60,9 +58,7 @@ function upDateDurationVideo() {
     const sliderPosition = video.currentTime * (100 / video.duration);
     durationSlider.value = sliderPosition;
     // change slider fill
-    durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPosition}%, white ${
-      sliderPosition + 0.1
-    }%)`;
+    durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPosition}%, white ${sliderPosition + 0.1}%)`;
   }
 }
 
@@ -97,9 +93,7 @@ function backwardDurationVideo() {
 }
 
 function addToFavoriteVideo() {
-  document
-    .getElementById("favorite-video")
-    .classList.toggle("add-to-favorite-video");
+  document.getElementById("favorite-video").classList.toggle("add-to-favorite-video");
 }
 
 setInterval(upDateDurationVideo, 1000);
@@ -108,6 +102,4 @@ setInterval(upDateDurationVideo, 1000);
 const volumeSlider = document.querySelector("#video-volume-slider");
 const volumeSliderPosition = volumeSlider.value / 100;
 const volumeSliderPoint = volumeSliderPosition * 100;
-volumeSlider.style.background = `linear-gradient(90deg, transparent ${volumeSliderPoint}%, white ${
-  volumeSliderPoint + 0.1
-}%)`;
+volumeSlider.style.background = `linear-gradient(90deg, transparent ${volumeSliderPoint}%, white ${volumeSliderPoint + 0.1}%)`;
