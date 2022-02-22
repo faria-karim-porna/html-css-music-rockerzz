@@ -3,47 +3,128 @@
 }
 
 body {
-    font-family: "Inconsolata", monospace;
-    background-color: black;
-    color: white;
+  font-family: "Inconsolata", monospace;
+  background-color: black;
+  color: white;
+}
+.login-page {
+  min-height: 100vh;
+}
+
+.login-section {
+  background-color: rgb(24, 24, 24);
+  border-radius: 15px;
+  width: 90vw;
+  min-height: 90vh;
+}
+
+.login-form-card {
+  background-color: black;
+  border-radius: 15px;
+  z-index: -5;
+}
+
+.login-form-border {
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
+  background-size: 400%;
+  border-radius: 15px;
+  height: 100%;
+  animation: colorAnimate 20s linear infinite;
+  z-index: -4;
+}
+
+.login-form-main {
+  background-color: black;
+  border-radius: 20px;
+  height: 100%;
+  font-size: 20px;
+  z-index: -3;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  background-color: #ffc2c2;
+  color: #010a43;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid white;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+::placeholder {
+  color: white;
+  font-size: 20px;
+}
+input[type="submit"]:hover {
+  background-color: #010a43;
+  color: #ffc2c2;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+.main-form-body {
+  height: 100vh;
+}
+
+.signUp-logIn-container {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  border: 1px solid white;
+}
+
+.signUp-logIn-shop-name {
+  font-size: 3.5rem;
+}
+
+.signUp-logIn-page {
+  background: linear-gradient(45deg, #010a43 50%, #ffc2c2 50%);
+}
+
+.signUp-logIn-text {
+  font-size: 18px;
+}
+
+.signUp-logIn-link-text {
+  color: #ffc2c2;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@keyframes colorAnimate {
+  0% {
+    background-position: 0 0;
   }
-  
-  .login-section {
-    background-color: rgb(24, 24, 24);
-    border-radius: 15px;
+  50% {
+    background-position: 300% 0;
   }
-  
-  .login-form-card {
-    background-color: black;
-    border-radius: 15px;
-    z-index: -5;
+  100% {
+    background-position: 0 0;
   }
-  
-  .login-form-border {
-    background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
-    background-size: 400%;
-    border-radius: 15px;
-    height: 100%;
-    animation: colorAnimate 20s linear infinite;
-    z-index: -4;
-  }
-  
-  .login-form-main {
-    background-color: black;
-    border-radius: 20px;
-    height: 100%;
-    font-size: 20px;
-    z-index: -3;
-  }
-  
-  @keyframes colorAnimate {
-    0% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 300% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
-  }
+}
