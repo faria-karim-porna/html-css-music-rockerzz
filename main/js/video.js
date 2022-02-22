@@ -110,11 +110,11 @@ function backwardDurationVideo() {
   }
 }
 
-// function addToFavorite() {
-//   document
-//     .getElementById("favorite")
-//     .classList.toggle("add-to-favorite");
-// }
+function addToFavoriteVideo() {
+  document
+    .getElementById("favorite-video")
+    .classList.toggle("add-to-favorite-video");
+}
 
 // setInterval(upDateDuration, 1000);
 
