@@ -26,6 +26,7 @@
   background-color: black;
   border-radius: 25px;
   padding: 7px;
+  cursor: pointer;
 }
 
 .popular-artist-image {
@@ -34,6 +35,31 @@
   width: 180px;
   background-size: cover;
   border-radius: 25px;
+}
+
+.popular-artist-card:hover .popular-artist-info-overlay {
+  display: block;
+}
+
+.popular-artist-info-overlay {
+  display: none;
+  position: absolute;
+  height: 230px;
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+  top: 10px;
+}
+
+.popular-artist-name {
+  height: 230px;
+  font-size: 20px;
+  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  animation: colorAnimate 20s linear infinite;
+  background-size: 400%;
 }
 
 .popular-artist-cards {
