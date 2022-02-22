@@ -97,7 +97,15 @@
                       </div>
                       <!-- video player actions start -->
                       <div class="video-player-actions">
-                        <input type="range" name="" min="0" max="100" value="0" id="video-duration-slider" onchange="changeDuration()" />
+                        <input
+                          type="range"
+                          name=""
+                          min="0"
+                          max="100"
+                          value="0"
+                          id="video-duration-slider"
+                          onchange="changeVideoDuration()"
+                        />
                         <div class="range-fill"></div>
                         <!-- video player buttons start -->
                         <div class="video-player-buttons d-flex justify-content-between align-items-center">
@@ -118,7 +126,15 @@
                           <div class="d-flex align-items-center justify-content-end w-25">
                             <i class="fa fa-volume-up mr-2"></i>
                             <div class="volume-range">
-                              <input type="range" name="" id="video-volume-slider" min="0" max="100" value="10" onclick="changeVolume()" />
+                              <input
+                                type="range"
+                                name=""
+                                id="video-volume-slider"
+                                min="0"
+                                max="100"
+                                value="100"
+                                onclick="changeVideoVolume()"
+                              />
                               <div class="volume-range-fill"></div>
                             </div>
                           </div>

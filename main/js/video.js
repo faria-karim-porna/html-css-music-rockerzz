@@ -1,9 +1,4 @@
 let isPlayingVideo = false;
-// let audioSource;
-// let analayzer;
-
-// // The number of bars that should be displayed
-// const NBR_OF_BARS = 20;
 // Get the video element tag
 const video = document.querySelector("video");
 
@@ -34,35 +29,29 @@ function playPauseVideo() {
   isPlayingVideo ? pauseVideo() : playVideo();
 }
 
-// function changeDuration() {
-//   // Get the audio element tag
-//   const audio = document.querySelector("audio");
+function changeVideoDuration() {
+  //change video time based on slider
+  let durationSlider = document.querySelector("#video-duration-slider");
+  const sliderPosition = video.duration * (durationSlider.value / 100);
+  video.currentTime = sliderPosition;
+  const sliderPoint = video.currentTime * (100 / video.duration);
+  // change slider fill
+  durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPoint}%, white ${
+    sliderPoint + 0.1
+  }%)`;
+}
 
-//   //change audio time based on slider
-//   let durationSlider = document.querySelector("#duration-slider");
-//   const sliderPosition = audio.duration * (durationSlider.value / 100);
-//   audio.currentTime = sliderPosition;
-//   const sliderPoint = audio.currentTime * (100 / audio.duration);
-//   // change slider fill
-//   durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPoint}%, white ${
-//     sliderPoint + 0.1
-//   }%)`;
-// }
-
-// function changeVolume() {
-//   // Get the audio element tag
-//   const audio = document.querySelector("audio");
-
-//   //change audio volume based on slider
-//   let volumeSlider = document.querySelector("#volume-slider");
-//   const volumeSliderPosition = volumeSlider.value / 100;
-//   audio.volume = volumeSliderPosition;
-//   const volumeSliderPoint = volumeSliderPosition * 100;
-//   // change volume slider fill
-//   volumeSlider.style.background = `linear-gradient(90deg, transparent ${volumeSliderPoint}%, white ${
-//     volumeSliderPoint + 0.1
-//   }%)`;
-// }
+function changeVideoVolume() {
+  //change audio volume based on slider
+  let volumeSlider = document.querySelector("#video-volume-slider");
+  const volumeSliderPosition = volumeSlider.value / 100;
+  video.volume = volumeSliderPosition;
+  const volumeSliderPoint = volumeSliderPosition * 100;
+  // change volume slider fill
+  volumeSlider.style.background = `linear-gradient(90deg, transparent ${volumeSliderPoint}%, white ${
+    volumeSliderPoint + 0.1
+  }%)`;
+}
 
 function upDateDurationVideo() {
   //change slider based on video time
@@ -115,10 +104,10 @@ function addToFavoriteVideo() {
 
 setInterval(upDateDurationVideo, 1000);
 
-// // change volume slider fill
-// const volumeSlider = document.querySelector("#volume-slider");
-// const volumeSliderPosition = volumeSlider.value / 100;
-// const volumeSliderPoint = volumeSliderPosition * 100;
-// volumeSlider.style.background = `linear-gradient(90deg, transparent ${volumeSliderPoint}%, white ${
-//   volumeSliderPoint + 0.1
-// }%)`;
+// change volume slider fill
+const volumeSlider = document.querySelector("#video-volume-slider");
+const volumeSliderPosition = volumeSlider.value / 100;
+const volumeSliderPoint = volumeSliderPosition * 100;
+volumeSlider.style.background = `linear-gradient(90deg, transparent ${volumeSliderPoint}%, white ${
+  volumeSliderPoint + 0.1
+}%)`;
