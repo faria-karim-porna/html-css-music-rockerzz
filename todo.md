@@ -7,7 +7,9 @@ Tasks to do
 * * Video Player (1 Hour)
 * Fix Navbar (1 Hour)
 * Footer (1 Hour)
-
+* Add Video, Audio, Team Members (Drag And Drop View, Form View)
+* Edit, Delete, View For Video, Audio, Users, Team Members (Table View)
+* Login, Sign UP (Form View)
 ------
 
 * Responsiveness (1 Day)
