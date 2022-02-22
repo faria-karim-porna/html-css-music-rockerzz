@@ -64,29 +64,26 @@ function playPauseVideo() {
 //   }%)`;
 // }
 
-// function upDateDuration() {
-//   // Get the audio element tag
-//   const audio = document.querySelector("audio");
-
-//   //change slider based on audio time
-//   let durationSlider = document.querySelector("#duration-slider");
-//   if (!isNaN(audio.duration)) {
-//     const sliderPosition = audio.currentTime * (100 / audio.duration);
-//     durationSlider.value = sliderPosition;
-//     // change slider fill
-//     durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPosition}%, white ${
-//       sliderPosition + 0.1
-//     }%)`;
-//   }
-// }
+function upDateDurationVideo() {
+  //change slider based on video time
+  let durationSlider = document.querySelector("#video-duration-slider");
+  if (!isNaN(video.duration)) {
+    const sliderPosition = video.currentTime * (100 / video.duration);
+    durationSlider.value = sliderPosition;
+    // change slider fill
+    durationSlider.style.background = `linear-gradient(90deg, transparent ${sliderPosition}%, white ${
+      sliderPosition + 0.1
+    }%)`;
+  }
+}
 
 function forwardDurationVideo() {
   //change slider based on audio time
   let durationSlider = document.querySelector("#video-duration-slider");
   if (!isNaN(video.duration)) {
-    // to speed up the audio
+    // to speed up the video
     // video.playbackRate = video.playbackRate + 0.5;
-    // forward the current audio for 10s
+    // forward the current video for 10s
     video.currentTime = video.currentTime + 10;
     const sliderPosition = video.currentTime * (100 / video.duration);
     durationSlider.value = sliderPosition;
@@ -99,9 +96,9 @@ function backwardDurationVideo() {
   //change slider based on audio time
   let durationSlider = document.querySelector("#video-duration-slider");
   if (!isNaN(video.duration)) {
-    // to speed down the audio
+    // to speed down the video
     // video.playbackRate = video.playbackRate - 0.5;
-    // backward the current audio for 10s
+    // backward the current video for 10s
     video.currentTime = video.currentTime - 10;
     const sliderPosition = video.currentTime * (100 / video.duration);
     durationSlider.value = sliderPosition;
@@ -116,7 +113,7 @@ function addToFavoriteVideo() {
     .classList.toggle("add-to-favorite-video");
 }
 
-// setInterval(upDateDuration, 1000);
+setInterval(upDateDurationVideo, 1000);
 
 // // change volume slider fill
 // const volumeSlider = document.querySelector("#volume-slider");
