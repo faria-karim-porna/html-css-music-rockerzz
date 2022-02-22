@@ -1,0 +1,49 @@
+.login-form-section {
+  z-index: 0;
+}
+
+body {
+    font-family: "Inconsolata", monospace;
+    background-color: black;
+    color: white;
+  }
+  
+  .login-section {
+    background-color: rgb(24, 24, 24);
+    border-radius: 15px;
+  }
+  
+  .login-form-card {
+    background-color: black;
+    border-radius: 15px;
+    z-index: -5;
+  }
+  
+  .login-form-border {
+    background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+    background-size: 400%;
+    border-radius: 15px;
+    height: 100%;
+    animation: colorAnimate 20s linear infinite;
+    z-index: -4;
+  }
+  
+  .login-form-main {
+    background-color: black;
+    border-radius: 20px;
+    height: 100%;
+    font-size: 20px;
+    z-index: -3;
+  }
+  
+  @keyframes colorAnimate {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 300% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
