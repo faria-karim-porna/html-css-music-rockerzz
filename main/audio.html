@@ -5,10 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Mobile Metas -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Site Metas -->
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -21,16 +18,10 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
     <link href="css/common.css" rel="stylesheet" />
@@ -46,9 +37,7 @@
     <!-- navbar start -->
     <header class="header-section">
       <div class="container-fluid">
-        <nav
-          class="navbar navbar-expand-lg custom-nav-container d-flex justify-content-between"
-        >
+        <nav class="navbar navbar-expand-lg custom-nav-container d-flex justify-content-between">
           <a class="navbar-brand" href="index.html">
             <span> RockerZZ </span>
           </a>
@@ -87,11 +76,7 @@
     <div class="audio-page p-5">
       <!-- main audio file start -->
       <div class="d-none">
-        <audio
-          src="https://greggman.github.io/doodles/sounds/DOCTOR VOX - Level Up.mp3"
-          controls
-          crossorigin
-        ></audio>
+        <audio controls crossorigin></audio>
       </div>
       <!-- main audio file end -->
 
@@ -105,25 +90,14 @@
             <div class="w-100 pt-4 pb-2 pr-4 pl-2">
               <div class="audio-player-card p-1">
                 <div class="audio-player-border">
-                  <div
-                    class="audio-player-main d-flex justify-content-center align-items-center text-center pt-4 pb-4"
-                  >
+                  <div class="audio-player-main d-flex justify-content-center align-items-center text-center pt-4 pb-4">
                     <div class="w-75 audio-player-section">
                       <div class="d-flex justify-content-center">
                         <!-- cd disk start -->
-                        <div
-                          class="cd-disk d-flex justify-content-center align-items-center disk-3"
-                          id="cd-disk"
-                        >
-                          <div
-                            class="circular-slide-image d-flex justify-content-center align-items-center"
-                          >
-                            <div
-                              class="cd-disk-border d-flex justify-content-center align-items-center"
-                            >
-                              <div
-                                class="cd-disk-inner d-flex justify-content-center align-items-center"
-                              >
+                        <div class="cd-disk d-flex justify-content-center align-items-center disk-3" id="cd-disk">
+                          <div class="circular-slide-image d-flex justify-content-center align-items-center">
+                            <div class="cd-disk-border d-flex justify-content-center align-items-center">
+                              <div class="cd-disk-inner d-flex justify-content-center align-items-center">
                                 <div class="cd-disk-hole"></div>
                               </div>
                             </div>
@@ -133,29 +107,17 @@
                       </div>
 
                       <!-- audio visualizer section start -->
-                      <div
-                        class="d-flex justify-content-center position-relative"
-                      >
+                      <div class="d-flex justify-content-center position-relative">
                         <div class="visualizer-container"></div>
                       </div>
                       <!-- audio visualizer section end -->
 
                       <!-- audio player actions start -->
                       <div class="audio-player-actions">
-                        <input
-                          type="range"
-                          name=""
-                          min="0"
-                          max="100"
-                          value="0"
-                          id="duration-slider"
-                          onchange="changeDuration()"
-                        />
+                        <input type="range" name="" min="0" max="100" value="0" id="duration-slider" onchange="changeDuration()" />
                         <div class="range-fill"></div>
                         <!-- audio player buttons start -->
-                        <div
-                          class="audio-player-buttons d-flex justify-content-between align-items-center"
-                        >
+                        <div class="audio-player-buttons d-flex justify-content-between align-items-center">
                           <div class="w-25" onclick="addToFavorite()" id="favorite">
                             <i class="fa fa-heart"></i>
                           </div>
@@ -164,29 +126,16 @@
                               <i class="fa fa-step-backward"></i>
                             </div>
                             <div onclick="playPause()">
-                              <i
-                                class="fa fa-play-circle"
-                                id="play-pause-icon"
-                              ></i>
+                              <i class="fa fa-play-circle" id="play-pause-icon"></i>
                             </div>
                             <div onclick="forwardDuration()">
                               <i class="fa fa-step-forward"></i>
                             </div>
                           </div>
-                          <div
-                            class="d-flex align-items-center justify-content-end w-25"
-                          >
+                          <div class="d-flex align-items-center justify-content-end w-25">
                             <i class="fa fa-volume-up mr-2"></i>
                             <div class="volume-range">
-                              <input
-                                type="range"
-                                name=""
-                                id="volume-slider"
-                                min="0"
-                                max="100"
-                                value="10"
-                                onclick="changeVolume()"
-                              />
+                              <input type="range" name="" id="volume-slider" min="0" max="100" value="10" onclick="changeVolume()" />
                               <div class="volume-range-fill"></div>
                             </div>
                           </div>
@@ -213,11 +162,7 @@
                 <div class="playlist-border">
                   <div class="playlist-main d-flex justify-content-center">
                     <div class="d-flex align-items-center text-center w-90">
-                      <div
-                        class="top-chart-text w-5 d-flex justify-content-center"
-                      >
-                        1
-                      </div>
+                      <div class="top-chart-text w-5 d-flex justify-content-center">1</div>
                       <div class="w-20 d-flex justify-content-center">
                         <div class="top-chart-image"></div>
                       </div>
@@ -225,9 +170,7 @@
                         <div>audio album Name</div>
                         <div>Song Name - Artist Name</div>
                       </div>
-                      <div
-                        class="top-chart-button d-flex align-items-center justify-content-center"
-                      >
+                      <div class="top-chart-button d-flex align-items-center justify-content-center">
                         <i class="fa fa-play"></i>
                       </div>
                     </div>
@@ -242,11 +185,7 @@
                 <div class="playlist-border">
                   <div class="playlist-main d-flex justify-content-center">
                     <div class="d-flex align-items-center text-center w-90">
-                      <div
-                        class="top-chart-text w-5 d-flex justify-content-center"
-                      >
-                        1
-                      </div>
+                      <div class="top-chart-text w-5 d-flex justify-content-center">1</div>
                       <div class="w-20 d-flex justify-content-center">
                         <div class="top-chart-image"></div>
                       </div>
@@ -254,9 +193,7 @@
                         <div>audio album Name</div>
                         <div>Song Name - Artist Name</div>
                       </div>
-                      <div
-                        class="top-chart-button d-flex align-items-center justify-content-center"
-                      >
+                      <div class="top-chart-button d-flex align-items-center justify-content-center">
                         <i class="fa fa-play"></i>
                       </div>
                     </div>
@@ -271,11 +208,7 @@
                 <div class="playlist-border">
                   <div class="playlist-main d-flex justify-content-center">
                     <div class="d-flex align-items-center text-center w-90">
-                      <div
-                        class="top-chart-text w-5 d-flex justify-content-center"
-                      >
-                        1
-                      </div>
+                      <div class="top-chart-text w-5 d-flex justify-content-center">1</div>
                       <div class="w-20 d-flex justify-content-center">
                         <div class="top-chart-image"></div>
                       </div>
@@ -283,9 +216,7 @@
                         <div>audio album Name</div>
                         <div>Song Name - Artist Name</div>
                       </div>
-                      <div
-                        class="top-chart-button d-flex align-items-center justify-content-center"
-                      >
+                      <div class="top-chart-button d-flex align-items-center justify-content-center">
                         <i class="fa fa-play"></i>
                       </div>
                     </div>
@@ -300,11 +231,7 @@
                 <div class="playlist-border">
                   <div class="playlist-main d-flex justify-content-center">
                     <div class="d-flex align-items-center text-center w-90">
-                      <div
-                        class="top-chart-text w-5 d-flex justify-content-center"
-                      >
-                        1
-                      </div>
+                      <div class="top-chart-text w-5 d-flex justify-content-center">1</div>
                       <div class="w-20 d-flex justify-content-center">
                         <div class="top-chart-image"></div>
                       </div>
@@ -312,9 +239,7 @@
                         <div>audio album Name</div>
                         <div>Song Name - Artist Name</div>
                       </div>
-                      <div
-                        class="top-chart-button d-flex align-items-center justify-content-center"
-                      >
+                      <div class="top-chart-button d-flex align-items-center justify-content-center">
                         <i class="fa fa-play"></i>
                       </div>
                     </div>
@@ -329,11 +254,7 @@
                 <div class="playlist-border">
                   <div class="playlist-main d-flex justify-content-center">
                     <div class="d-flex align-items-center text-center w-90">
-                      <div
-                        class="top-chart-text w-5 d-flex justify-content-center"
-                      >
-                        1
-                      </div>
+                      <div class="top-chart-text w-5 d-flex justify-content-center">1</div>
                       <div class="w-20 d-flex justify-content-center">
                         <div class="top-chart-image"></div>
                       </div>
@@ -341,9 +262,7 @@
                         <div>audio album Name</div>
                         <div>Song Name - Artist Name</div>
                       </div>
-                      <div
-                        class="top-chart-button d-flex align-items-center justify-content-center"
-                      >
+                      <div class="top-chart-button d-flex align-items-center justify-content-center">
                         <i class="fa fa-play"></i>
                       </div>
                     </div>
@@ -360,110 +279,224 @@
 
       <!-- popular audio album section start -->
       <div>
-        <div class="sub-section-name w-100 text-center">
-          Popular Audio Albums
-        </div>
+        <div class="sub-section-name w-100 text-center">Popular Audio Albums</div>
         <div class="w-100 d-flex justify-content-center mt-5">
-          <div class="w-75 d-flex justify-content-around">
-            <!-- audio album card start -->
-            <div class="audio-album-card-border">
-              <div class="audio-album-card">
-                <div class="d-flex justify-content-center">
-                  <img
-                    src="images/1.jpg"
-                    alt=""
-                    class="img-fluid album-image"
-                  />
-                </div>
-                <div class="album-detail">
-                  <div class="text-center album-text">
-                    Song Name - Audio Album Name
-                  </div>
-                  <div class="d-flex">
-                    <div class="text-center album-text mr-3">Artists Name</div>
-                    <div
-                      class="d-flex justify-content-center album-genre-border"
-                    >
-                      <div class="album-genre">
-                        <div class="text-center album-genre-text">
-                          Genre Name
+          <div class="d-flex align-items-center audio-album-slider-section">
+            <div class="d-flex audio-album-slider">
+              <div class="d-flex audio-album-group justify-content-around">
+                <!-- album card start -->
+                <div class="audio-album-card-border">
+                  <div class="audio-album-card">
+                    <div class="d-flex justify-content-center">
+                      <img src="images/1.jpg" alt="" class="img-fluid audio-album-image" />
+                    </div>
+                    <div class="audio-album-detail">
+                      <div class="text-center audio-album-text">Song Name - Album Name</div>
+                      <div class="d-flex justify-content-center">
+                        <div class="text-center audio-album-text mr-3">Artists Name</div>
+                        <div class="d-flex justify-content-center audio-album-genre-border">
+                          <div class="audio-album-genre">
+                            <div class="text-center audio-album-genre-text">Genre Name</div>
+                          </div>
                         </div>
+                      </div>
+                      <div class="d-flex justify-content-center pt-4">
+                        <i class="fa fa-play-circle"></i>
                       </div>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-center pt-4">
-                    <i class="fa fa-play-circle"></i>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <!-- audio album card end -->
-            <!-- audio album card start -->
-            <div class="audio-album-card-border">
-              <div class="audio-album-card">
-                <div class="d-flex justify-content-center">
-                  <img
-                    src="images/1.jpg"
-                    alt=""
-                    class="img-fluid album-image"
-                  />
-                </div>
-                <div class="album-detail">
-                  <div class="text-center album-text">
-                    Song Name - Audio Album Name
-                  </div>
-                  <div class="d-flex">
-                    <div class="text-center album-text mr-3">Artists Name</div>
-                    <div
-                      class="d-flex justify-content-center album-genre-border"
-                    >
-                      <div class="album-genre">
-                        <div class="text-center album-genre-text">
-                          Genre Name
+                <!-- album card end -->
+                <!-- album card start -->
+                <div class="audio-album-card-border">
+                  <div class="audio-album-card">
+                    <div class="d-flex justify-content-center">
+                      <img src="images/1.jpg" alt="" class="img-fluid audio-album-image" />
+                    </div>
+                    <div class="audio-album-detail">
+                      <div class="text-center audio-album-text">Song Name - Album Name</div>
+                      <div class="d-flex justify-content-center">
+                        <div class="text-center audio-album-text mr-3">Artists Name</div>
+                        <div class="d-flex justify-content-center audio-album-genre-border">
+                          <div class="audio-album-genre">
+                            <div class="text-center audio-album-genre-text">Genre Name</div>
+                          </div>
                         </div>
+                      </div>
+                      <div class="d-flex justify-content-center pt-4">
+                        <i class="fa fa-play-circle"></i>
                       </div>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-center pt-4">
-                    <i class="fa fa-play-circle"></i>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <!-- audio album card end -->
-            <!-- audio album card start -->
-            <div class="audio-album-card-border">
-              <div class="audio-album-card">
-                <div class="d-flex justify-content-center">
-                  <img
-                    src="images/1.jpg"
-                    alt=""
-                    class="img-fluid album-image"
-                  />
-                </div>
-                <div class="album-detail">
-                  <div class="text-center album-text">
-                    Song Name - Audio Album Name
-                  </div>
-                  <div class="d-flex">
-                    <div class="text-center album-text mr-3">Artists Name</div>
-                    <div
-                      class="d-flex justify-content-center album-genre-border"
-                    >
-                      <div class="album-genre">
-                        <div class="text-center album-genre-text">
-                          Genre Name
+                <!-- album card end -->
+                <!-- album card start -->
+                <div class="audio-album-card-border">
+                  <div class="audio-album-card">
+                    <div class="d-flex justify-content-center">
+                      <img src="images/1.jpg" alt="" class="img-fluid audio-album-image" />
+                    </div>
+                    <div class="audio-album-detail">
+                      <div class="text-center audio-album-text">Song Name - Album Name</div>
+                      <div class="d-flex justify-content-center">
+                        <div class="text-center audio-album-text mr-3">Artists Name</div>
+                        <div class="d-flex justify-content-center audio-album-genre-border">
+                          <div class="audio-album-genre">
+                            <div class="text-center audio-album-genre-text">Genre Name</div>
+                          </div>
                         </div>
+                      </div>
+                      <div class="d-flex justify-content-center pt-4">
+                        <i class="fa fa-play-circle"></i>
                       </div>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-center pt-4">
-                    <i class="fa fa-play-circle"></i>
+                </div>
+                <!-- album card end -->
+              </div>
+              <div class="d-flex audio-album-group justify-content-around">
+                <!-- album card start -->
+                <div class="audio-album-card-border">
+                  <div class="audio-album-card">
+                    <div class="d-flex justify-content-center">
+                      <img src="images/1.jpg" alt="" class="img-fluid audio-album-image" />
+                    </div>
+                    <div class="audio-album-detail">
+                      <div class="text-center audio-album-text">Song Name - Album Name</div>
+                      <div class="d-flex justify-content-center">
+                        <div class="text-center audio-album-text mr-3">Artists Name</div>
+                        <div class="d-flex justify-content-center audio-album-genre-border">
+                          <div class="audio-album-genre">
+                            <div class="text-center audio-album-genre-text">Genre Name</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center pt-4">
+                        <i class="fa fa-play-circle"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <!-- album card end -->
+                <!-- album card start -->
+                <div class="audio-album-card-border">
+                  <div class="audio-album-card">
+                    <div class="d-flex justify-content-center">
+                      <img src="images/1.jpg" alt="" class="img-fluid audio-album-image" />
+                    </div>
+                    <div class="audio-album-detail">
+                      <div class="text-center audio-album-text">Song Name - Album Name</div>
+                      <div class="d-flex justify-content-center">
+                        <div class="text-center audio-album-text mr-3">Artists Name</div>
+                        <div class="d-flex justify-content-center audio-album-genre-border">
+                          <div class="audio-album-genre">
+                            <div class="text-center audio-album-genre-text">Genre Name</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center pt-4">
+                        <i class="fa fa-play-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- album card end -->
+                <!-- album card start -->
+                <div class="audio-album-card-border">
+                  <div class="audio-album-card">
+                    <div class="d-flex justify-content-center">
+                      <img src="images/1.jpg" alt="" class="img-fluid audio-album-image" />
+                    </div>
+                    <div class="audio-album-detail">
+                      <div class="text-center audio-album-text">Song Name - Album Name</div>
+                      <div class="d-flex justify-content-center">
+                        <div class="text-center audio-album-text mr-3">Artists Name</div>
+                        <div class="d-flex justify-content-center audio-album-genre-border">
+                          <div class="audio-album-genre">
+                            <div class="text-center audio-album-genre-text">Genre Name</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center pt-4">
+                        <i class="fa fa-play-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- album card end -->
+              </div>
+              <div class="d-flex audio-album-group justify-content-around">
+                <!-- album card start -->
+                <div class="audio-album-card-border">
+                  <div class="audio-album-card">
+                    <div class="d-flex justify-content-center">
+                      <img src="images/1.jpg" alt="" class="img-fluid audio-album-image" />
+                    </div>
+                    <div class="audio-album-detail">
+                      <div class="text-center audio-album-text">Song Name - Album Name</div>
+                      <div class="d-flex justify-content-center">
+                        <div class="text-center audio-album-text mr-3">Artists Name</div>
+                        <div class="d-flex justify-content-center audio-album-genre-border">
+                          <div class="audio-album-genre">
+                            <div class="text-center audio-album-genre-text">Genre Name</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center pt-4">
+                        <i class="fa fa-play-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- album card end -->
+                <!-- album card start -->
+                <div class="audio-album-card-border">
+                  <div class="audio-album-card">
+                    <div class="d-flex justify-content-center">
+                      <img src="images/1.jpg" alt="" class="img-fluid audio-album-image" />
+                    </div>
+                    <div class="audio-album-detail">
+                      <div class="text-center audio-album-text">Song Name - Album Name</div>
+                      <div class="d-flex justify-content-center">
+                        <div class="text-center audio-album-text mr-3">Artists Name</div>
+                        <div class="d-flex justify-content-center audio-album-genre-border">
+                          <div class="audio-album-genre">
+                            <div class="text-center audio-album-genre-text">Genre Name</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center pt-4">
+                        <i class="fa fa-play-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- album card end -->
+                <!-- album card start -->
+                <div class="audio-album-card-border">
+                  <div class="audio-album-card">
+                    <div class="d-flex justify-content-center">
+                      <img src="images/1.jpg" alt="" class="img-fluid audio-album-image" />
+                    </div>
+                    <div class="audio-album-detail">
+                      <div class="text-center audio-album-text">Song Name - Album Name</div>
+                      <div class="d-flex justify-content-center">
+                        <div class="text-center audio-album-text mr-3">Artists Name</div>
+                        <div class="d-flex justify-content-center audio-album-genre-border">
+                          <div class="audio-album-genre">
+                            <div class="text-center audio-album-genre-text">Genre Name</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center pt-4">
+                        <i class="fa fa-play-circle"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- album card end -->
               </div>
             </div>
-            <!-- audio album card end -->
           </div>
         </div>
       </div>
@@ -489,5 +522,6 @@
     ></script>
     <script src="js/navbar.js"></script>
     <script src="js/audioVisualizer.js"></script>
+    <script src="js/popularAudioAlbumSection.js"></script>
   </body>
 </html>
