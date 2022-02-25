@@ -1,0 +1,42 @@
+.sidebar {
+  width: 117px;
+  background-color: rgb(24, 24, 24);
+  height: 93vh;
+  border-right: 1px solid red;
+}
+
+.sidebar-tab-icons {
+  font-size: 35px;
+}
+
+.sidebar-tab {
+  height: 100px;
+}
+
+.sidebar-tab-texts {
+  font-size: 20px;
+}
+
+.sidebar-tab-active {
+  background-color: black;
+}
+
+.sidebar-tab-active-text {
+  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colorAnimate 20s linear infinite;
+  background-size: 400%;
+}
+
+@keyframes colorAnimate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

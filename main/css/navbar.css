@@ -3,6 +3,10 @@
   background-color: rgb(24, 24, 24); 
 }
 
+.dashboard-navbar{
+  border-bottom: 1px solid red;
+}
+
 .custom-nav-container {
   padding: 0;
 }

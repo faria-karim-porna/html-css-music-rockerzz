@@ -1,18 +1,12 @@
+body {
+  font-family: "Inconsolata", monospace;
+  background-color: black;
+  color: white;
+}
+
 .section-name {
   font-size: 72px;
-  background: -webkit-linear-gradient(
-    45deg,
-    #fb0094,
-    #00f,
-    #0f0,
-    #ff0,
-    #f00,
-    #fb0094,
-    #00f,
-    #0f0,
-    #ff0,
-    #f00
-  );
+  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
@@ -24,19 +18,7 @@
 
 .sub-section-name {
   font-size: 41px;
-  background: -webkit-linear-gradient(
-    45deg,
-    #fb0094,
-    #00f,
-    #0f0,
-    #ff0,
-    #f00,
-    #fb0094,
-    #00f,
-    #0f0,
-    #ff0,
-    #f00
-  );
+  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
@@ -79,7 +61,7 @@
 }
 
 /************ Scrollbar CSS *****************/
- 
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

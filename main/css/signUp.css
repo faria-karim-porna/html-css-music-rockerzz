@@ -2,11 +2,6 @@
   z-index: 0;
 }
 
-body {
-  font-family: "Inconsolata", monospace;
-  background-color: black;
-  color: white;
-}
 .signup-page {
   min-height: 100vh;
 }
