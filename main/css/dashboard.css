@@ -1,0 +1,19 @@
+.dashboard-main{
+    width: calc(100vw - 117px);
+    font-size: 20px;
+}
+
+.dashboard-selected-tab{
+    border: none;
+    border-bottom: 1px solid red;
+    color: red;
+}
+
+.dashboard-tab-line{
+    border-bottom: 1px solid white;
+    width: inherit;
+}
+
+.dashboard-tab{
+    border-bottom: 1px solid white;
+}
