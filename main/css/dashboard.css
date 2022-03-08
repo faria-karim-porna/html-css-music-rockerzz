@@ -1,0 +1,21 @@
+.dashboard-widget-box {
+  border-radius: 10px;
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  animation: colorAnimate 20s linear infinite;
+  min-width: 22%;
+  height: 200px;
+  padding: 3px;
+}
+
+.dashboard-widget-box-inner {
+  background-color: black;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.dashboard-widget-text-main {
+  color: red;
+  font-size: 28px;
+  font-weight: 900;
+}
