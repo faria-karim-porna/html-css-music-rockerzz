@@ -33,11 +33,10 @@
 
 .circular-slider {
   height: 510px;
-  width: 80%;
-  margin-top: -180px;
+  width: 100%;
+  margin-top: -150px;
   overflow: hidden;
-  /* transform: translateZ(100px); */
-  /* background-color: rgb(24, 24, 24); */
+  position: relative;
 }
 
 .cd-disk {
@@ -49,46 +48,6 @@
   background-size: 400%;
   animation: colorAnimate 20s linear infinite;
   transition: transform 0.7s ease-in-out;
-}
-
-.disk-1 {
-  left: 24%;
-  top: 0px;
-}
-
-.disk-2 {
-  left: 42%;
-  top: -150px;
-}
-
-.disk-3 {
-  left: 60%;
-  top: 0px;
-}
-
-.disk-4 {
-  left: 70%;
-  top: 350px;
-}
-
-.disk-5 {
-  left: 60%;
-  top: 700px;
-}
-
-.disk-6 {
-  left: 42%;
-  top: 850px;
-}
-
-.disk-7 {
-  left: 24%;
-  top: 700px;
-}
-
-.disk-8 {
-  left: 14%;
-  top: 350px;
 }
 
 .cd-disk:hover {
