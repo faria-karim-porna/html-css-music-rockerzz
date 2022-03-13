@@ -1,10 +1,14 @@
 .header-section {
   height: 7vh;
-  background-color: rgb(24, 24, 24); 
+  background-color: rgb(24, 24, 24);
 }
 
-.dashboard-navbar{
-  border-bottom: 1px solid red;
+.navbar-border {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  animation: colorAnimate 20s linear infinite;
 }
 
 .custom-nav-container {

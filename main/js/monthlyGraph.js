@@ -19,7 +19,7 @@ function drawChart() {
   ]);
 
   var options = {
-    title: "Music Downloads",
+    title: "Monthly Music Downloads",
     titleTextStyle: { color: "white", fontSize: 16 },
     curveType: "function",
     legend: { position: "bottom", textStyle: { color: "white", fontSize: 16 } },

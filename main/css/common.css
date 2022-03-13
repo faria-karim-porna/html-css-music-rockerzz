@@ -40,6 +40,10 @@ body {
   width: 20%;
 }
 
+.w-45 {
+  width: 45%;
+}
+
 .w-70 {
   width: 70%;
 }
@@ -52,8 +56,12 @@ body {
   width: 90%;
 }
 
-.w-5 {
-  width: 5%;
+.h-90 {
+  height: 90%;
+}
+
+.h-80 {
+  height: 80%;
 }
 
 .cursor-pointer {
