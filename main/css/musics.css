@@ -1,0 +1,46 @@
+.dashboard-main {
+  width: calc(100vw - 117px);
+  font-size: 20px;
+}
+
+.dashboard-selected-tab {
+  border: none;
+  border-bottom: 1px solid red;
+  color: red;
+}
+
+.dashboard-tab-line {
+  border-bottom: 1px solid white;
+  width: inherit;
+}
+
+.dashboard-tab {
+  border-bottom: 1px solid white;
+}
+
+.musics-search-section {
+  border-radius: 10px;
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  animation: colorAnimate 20s linear infinite;
+}
+
+.musics-search-inner {
+  border-radius: 10px;
+  padding: 5px 10px;
+  background: black;
+  margin: 1px;
+}
+
+.musics-search {
+  background-color: transparent;
+  border: none;
+}
+
+.fa-search {
+  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colorAnimate 20s linear infinite;
+  background-size: 400%;
+}
