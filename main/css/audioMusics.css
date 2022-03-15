@@ -17,6 +17,7 @@
   width: 200px;
   border-radius: 25px;
   padding: 3px;
+  position: relative;
 }
 
 .audio-musics-card {
@@ -59,13 +60,4 @@
   font-weight: 900;
   animation: colorAnimate 20s linear infinite;
   background-size: 400%;
-}
-
-.audio-musics-cards {
-  position: relative;
-}
-
-.audio-musics-slider {
-  position: absolute;
-  right: 0px;
 }
