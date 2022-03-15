@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
     <link rel="stylesheet" href="css/users.css" />
+    <link rel="stylesheet" href="css/addAdminModal.css" />
     <link rel="stylesheet" href="css/table.css" />
   </head>
 
@@ -98,7 +99,7 @@
           <div class="users-search-section d-flex justify-content-center align-items-center">
             <div class="users-search-inner"><input type="text" class="users-search" /> <i class="fa fa-search"></i></div>
           </div>
-          <div class="admin-buttons d-flex justify-content-center ml-3">
+          <div class="admin-buttons d-flex justify-content-center ml-3" onclick="addAdminModalOpen()">
             <div class="admin-buttons-inner">Add Admin</div>
           </div>
         </div>
@@ -260,6 +261,14 @@
       </div>
       <!-- dashboard main body end -->
     </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
     <!-- Bootstrap JS -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script
@@ -277,5 +286,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="js/addAdminModal.js"></script>
   </body>
 </html>
