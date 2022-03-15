@@ -1,7 +1,6 @@
 .audio-musics-section {
   background-color: rgb(24, 24, 24);
-  padding-top: 20px;
-  padding-bottom: 90px;
+  border-radius: 10px;
 }
 
 .audio-musics-button {
