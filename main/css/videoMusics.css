@@ -1,0 +1,63 @@
+.video-musics-section {
+  background-color: rgb(24, 24, 24);
+  border-radius: 10px;
+}
+
+.video-musics-button {
+  font-size: 30px;
+}
+
+.video-musics-card-border {
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  margin-left: 5px;
+  margin-right: 5px;
+  background-size: 400%;
+  animation: colorAnimate 20s linear infinite;
+  height: 250px;
+  width: 200px;
+  border-radius: 25px;
+  padding: 3px;
+  position: relative;
+}
+
+.video-musics-card {
+  height: 244px;
+  width: 194px;
+  background-color: black;
+  border-radius: 25px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.video-musics-image {
+  background-image: url("../images/1.jpg");
+  height: 230px;
+  width: 180px;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.video-musics-card:hover .video-musics-info-overlay {
+  display: block;
+}
+
+.video-musics-info-overlay {
+  display: none;
+  position: absolute;
+  height: 230px;
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+  top: 10px;
+}
+
+.video-musics-name {
+  height: 230px;
+  font-size: 20px;
+  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  animation: colorAnimate 20s linear infinite;
+  background-size: 400%;
+}
