@@ -1,5 +1,5 @@
 /* The Modal (background) */
-.modal {
+.addAdminModal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -13,7 +13,7 @@
 }
 
 /* Modal Content */
-.modal-content {
+.addAdminModal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
@@ -21,16 +21,16 @@
   width: 80%;
 }
 
-/* The Close Button */
-.close {
+/* The addAdminModal-close Button */
+.addAdminModal-close {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.addAdminModal-close:hover,
+.addAdminModal-close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
