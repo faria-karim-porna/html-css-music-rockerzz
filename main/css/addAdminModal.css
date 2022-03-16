@@ -14,24 +14,139 @@
 
 /* Modal Content */
 .addAdminModal-content {
-  background-color: #fefefe;
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  border-radius: 15px;
+  animation: colorAnimate 20s linear infinite;
   margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+}
+
+.addAdminModal-border {
+  border-radius: 15px;
+  background-color: black;
 }
 
 /* The addAdminModal-close Button */
 .addAdminModal-close {
-  color: #aaaaaa;
-  float: right;
+  color: white;
+  /* float: right; */
   font-size: 28px;
   font-weight: bold;
 }
 
 .addAdminModal-close:hover,
 .addAdminModal-close:focus {
-  color: #000;
-  text-decoration: none;
   cursor: pointer;
+}
+
+/****************************add admin modal form ****************************/
+
+.addAdminModal-form-section {
+  z-index: 0;
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+  background-color: black;
+  color: white;
+}
+.addAdminModal-page {
+  min-height: 100vh;
+}
+
+.addAdminModal-section {
+  background-color: rgb(24, 24, 24);
+  border-radius: 15px;
+  width: 90vw;
+  min-height: 90vh;
+}
+
+.addAdminModal-form-card {
+  background-color: black;
+  border-radius: 15px;
+  z-index: -5;
+}
+
+.addAdminModal-form-border {
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  border-radius: 15px;
+  height: 100%;
+  animation: colorAnimate 20s linear infinite;
+  z-index: -4;
+}
+
+.addAdminModal-form-main {
+  background-color: black;
+  border-radius: 20px;
+  height: 100%;
+  font-size: 20px;
+  z-index: -3;
+}
+
+.input-field {
+  margin-top: 20px;
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  border-radius: 15px;
+  padding: 2px;
+  animation: colorAnimate 20s linear infinite;
+}
+
+.input {
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 15px;
+  background-color: black;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  border-radius: 15px;
+  padding: 2px;
+  animation: colorAnimate 20s linear infinite;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border: 3px solid rgb(24, 24, 24);
+  font-size: 28px;
+  font-weight: 900;
+}
+
+::placeholder {
+  color: white;
+  font-size: 20px;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+.main-form-body {
+  height: 100vh;
+}
+.form-name {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.addAdminModal-link-text {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@keyframes colorAnimate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
