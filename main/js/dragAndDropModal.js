@@ -27,14 +27,14 @@ window.onclick = function (event) {
 var dropZoneOverlay = document.getElementsByClassName("drop-zone-overlay")[0];
 var dropZone = document.getElementsByClassName("drop-zone")[0];
 
-function showDropZone() {
+function showAudioDropZoneOverlay() {
   dropZoneOverlay.style.display = "block";
 }
-function hideDropZone() {
+function hideAudioDropZoneOverlay() {
   dropZoneOverlay.style.display = "none";
 }
 
-function allowDrag(e) {
+function allowAudioDrag(e) {
   if (true) {
     // Test that the item being dragged is a valid one
     e.dataTransfer.dropEffect = "copy";
@@ -42,9 +42,9 @@ function allowDrag(e) {
   }
 }
 
-function handleDrop(e) {
+function handleAudioDrop(e) {
   e.preventDefault();
-  hideDropZone();
+  hideAudioDropZoneOverlay();
 
   if (e.dataTransfer.items) {
     // Use DataTransferItemList interface to access the file(s)
@@ -65,18 +65,18 @@ function handleDrop(e) {
 
 // 1
 dropZone.addEventListener("dragenter", function (e) {
-  showDropZone();
+  showAudioDropZoneOverlay();
 });
 
 2;
-dropZoneOverlay.addEventListener("dragenter", allowDrag);
-dropZoneOverlay.addEventListener("dragover", allowDrag);
+dropZoneOverlay.addEventListener("dragenter", allowAudioDrag);
+dropZoneOverlay.addEventListener("dragover", allowAudioDrag);
 
 // 3
 dropZoneOverlay.addEventListener("dragleave", function (e) {
   console.log("dragleave");
-  hideDropZone();
+  hideAudioDropZoneOverlay();
 });
 
 // 4
-dropZoneOverlay.addEventListener("drop", handleDrop);
+dropZoneOverlay.addEventListener("drop", handleAudioDrop);
