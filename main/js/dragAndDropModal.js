@@ -24,14 +24,14 @@ window.onclick = function (event) {
 ///////////////////////////////////drag and drop handle////////////////////////////////
 // Enhanced for my own purposes
 
-var dropZoneOverlay = document.getElementsByClassName("drop-zone-overlay")[0];
-var dropZone = document.getElementsByClassName("drop-zone")[0];
+var audioDropZoneOverlay = document.getElementsByClassName("drop-zone-overlay")[0];
+var audioDropZone = document.getElementsByClassName("drop-zone")[0];
 
 function showAudioDropZoneOverlay() {
-  dropZoneOverlay.style.display = "block";
+  audioDropZoneOverlay.style.display = "block";
 }
 function hideAudioDropZoneOverlay() {
-  dropZoneOverlay.style.display = "none";
+  audioDropZoneOverlay.style.display = "none";
 }
 
 function allowAudioDrag(e) {
@@ -64,19 +64,19 @@ function handleAudioDrop(e) {
 }
 
 // 1
-dropZone.addEventListener("dragenter", function (e) {
+audioDropZone.addEventListener("dragenter", function (e) {
   showAudioDropZoneOverlay();
 });
 
 2;
-dropZoneOverlay.addEventListener("dragenter", allowAudioDrag);
-dropZoneOverlay.addEventListener("dragover", allowAudioDrag);
+audioDropZoneOverlay.addEventListener("dragenter", allowAudioDrag);
+audioDropZoneOverlay.addEventListener("dragover", allowAudioDrag);
 
 // 3
-dropZoneOverlay.addEventListener("dragleave", function (e) {
+audioDropZoneOverlay.addEventListener("dragleave", function (e) {
   console.log("dragleave");
   hideAudioDropZoneOverlay();
 });
 
 // 4
-dropZoneOverlay.addEventListener("drop", handleAudioDrop);
+audioDropZoneOverlay.addEventListener("drop", handleAudioDrop);
