@@ -22,41 +22,61 @@ window.onclick = function (event) {
 };
 
 ///////////////////////////////////drag and drop handle////////////////////////////////
-function dropHandler(ev) {
-  console.log("File(s) dropped");
+// Enhanced for my own purposes
 
-  // Prevent default behavior (Prevent file from being opened)
-  ev.preventDefault();
+var dropZoneOverlay = document.getElementsByClassName("drop-zone-overlay")[0];
+var dropZone = document.getElementsByClassName("drop-zone")[0];
 
-  if (ev.dataTransfer.items) {
+function showDropZone() {
+  dropZoneOverlay.style.display = "block";
+}
+function hideDropZone() {
+  dropZoneOverlay.style.display = "none";
+}
+
+function allowDrag(e) {
+  if (true) {
+    // Test that the item being dragged is a valid one
+    e.dataTransfer.dropEffect = "copy";
+    e.preventDefault();
+  }
+}
+
+function handleDrop(e) {
+  e.preventDefault();
+  hideDropZone();
+
+  if (e.dataTransfer.items) {
     // Use DataTransferItemList interface to access the file(s)
-    for (var i = 0; i < ev.dataTransfer.items.length; i++) {
+    for (var i = 0; i < e.dataTransfer.items.length; i++) {
       // If dropped items aren't files, reject them
-      if (ev.dataTransfer.items[i].kind === "file") {
-        var file = ev.dataTransfer.items[i].getAsFile();
+      if (e.dataTransfer.items[i].kind === "file") {
+        var file = e.dataTransfer.items[i].getAsFile();
         console.log("... file[" + i + "].name = " + file.name);
       }
     }
   } else {
     // Use DataTransfer interface to access the file(s)
-    for (var i = 0; i < ev.dataTransfer.files.length; i++) {
-      console.log("... file[" + i + "].name = " + ev.dataTransfer.files[i].name);
+    for (var i = 0; i < e.dataTransfer.files.length; i++) {
+      console.log("... file[" + i + "].name = " + e.dataTransfer.files[i].name);
     }
   }
 }
 
-function dragOverHandler(ev) {
-  console.log("File(s) in drop zone");
-  document.getElementsByClassName("drop-zone-overlay")[0].style.display = "block";
+// 1
+dropZone.addEventListener("dragenter", function (e) {
+  showDropZone();
+});
 
-  // Prevent default behavior (Prevent file from being opened)
-  ev.preventDefault();
-}
+2;
+dropZoneOverlay.addEventListener("dragenter", allowDrag);
+dropZoneOverlay.addEventListener("dragover", allowDrag);
 
-function dragLeaveHandler(ev) {
-  console.log("File(s) in drop zone");
-  document.getElementsByClassName("drop-zone-overlay")[0].style.display = "none";
+// 3
+dropZoneOverlay.addEventListener("dragleave", function (e) {
+  console.log("dragleave");
+  hideDropZone();
+});
 
-  // Prevent default behavior (Prevent file from being opened)
-//   ev.preventDefault();
-}
+// 4
+dropZoneOverlay.addEventListener("drop", handleDrop);
