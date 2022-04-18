@@ -83,6 +83,7 @@ function playSong() {
 
   audio.volume = 0.1;
   audio.play();
+  setInterval(upDateDuration, 1000);
 }
 
 function pauseSong() {
@@ -191,7 +192,7 @@ function addToFavorite() {
   document.getElementById("favorite").classList.toggle("add-to-favorite");
 }
 
-setInterval(upDateDuration, 1000);
+
 
 // change volume slider fill
 const volumeSlider = document.querySelector("#volume-slider");
