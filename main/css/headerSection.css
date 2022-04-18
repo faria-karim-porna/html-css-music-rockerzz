@@ -3,11 +3,11 @@ body {
   color: white;
   font-family: "Inconsolata", monospace;
 }
-.fa-guitar-electric{
+.fa-guitar-electric {
   color: #ff0;
 }
 .title {
-  font-size: 72px;
+  font-size: 4.5rem;
   background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -15,11 +15,16 @@ body {
   animation: colorAnimate 20s linear infinite;
   background-size: 400%;
 }
-.sub-title{
-  font-size: 30px;
+.sub-title {
+  font-size: 1.875rem;
 }
+
+.header-area {
+  height: calc(100vh - 4rem);
+}
+
 .img {
-  height: 93vh;
+  height: calc(100vh - 4rem);
   overflow-y: hidden;
 }
 
@@ -69,5 +74,19 @@ body {
   }
   100% {
     background-position: 0 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header-text-area {
+    height: calc((100vh - 4rem) / 2);
+  }
+  .img {
+    height: calc((100vh - 4rem) / 2);
+  }
+
+  .header-image-area {
+    display: flex;
+    justify-content: center;
   }
 }

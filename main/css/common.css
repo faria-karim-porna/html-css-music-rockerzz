@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+.row {
+  margin: 0;
+}
+
 body {
   font-family: "Inconsolata", monospace;
   background-color: black;
