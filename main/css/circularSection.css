@@ -99,22 +99,22 @@
 
 @media (max-width: 575.98px) {
   .cd-disk {
+    width: 110px;
+    height: 110px;
+  }
+  .circular-slide-image {
     width: 100px;
     height: 100px;
   }
-  .circular-slide-image {
-    width: 95px;
-    height: 95px;
-  }
 
   .cd-disk-border {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
   }
 
   .cd-disk-inner {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
 
   .cd-disk-hole {
