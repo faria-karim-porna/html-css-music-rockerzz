@@ -122,29 +122,3 @@
     height: 3vw;
   }
 }
-
-/* @media (min-width: 575.99px) and (max-width: 1365px) {
-  .cd-disk {
-    width: 200px;
-    height: 200px;
-  }
-  .circular-slide-image {
-    width: 195px;
-    height: 195px;
-  }
-
-  .cd-disk-border {
-    width: 100px;
-    height: 100px;
-  }
-
-  .cd-disk-inner {
-    width: 90px;
-    height: 90px;
-  }
-
-  .cd-disk-hole {
-    width: 30px;
-    height: 30px;
-  }
-} */
