@@ -121,3 +121,9 @@
 .menu-width.overlay a {
   opacity: 1;
 }
+
+@media (max-width: 575.98px) {
+  .login-text {
+    display: none;
+  }
+}

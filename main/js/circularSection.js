@@ -1,6 +1,6 @@
 document.getElementsByClassName("disk-1")[0].style.left = "25%";
 document.getElementsByClassName("disk-1")[0].style.transform = "translate(-25%, 0)";
-document.getElementsByClassName("disk-1")[0].style.top = "160px";
+document.getElementsByClassName("disk-1")[0].style.top = "calc(8vw + 10px)";
 document.getElementsByClassName("disk-1")[0].style.transition = "0.5s";
 
 document.getElementsByClassName("disk-2")[0].style.left = "50%";
@@ -10,7 +10,7 @@ document.getElementsByClassName("disk-2")[0].style.transition = "0.5s";
 
 document.getElementsByClassName("disk-3")[0].style.left = "75%";
 document.getElementsByClassName("disk-3")[0].style.transform = "translate(-75%, 0)";
-document.getElementsByClassName("disk-3")[0].style.top = "160px";
+document.getElementsByClassName("disk-3")[0].style.top = "calc(8vw + 10px)";
 document.getElementsByClassName("disk-3")[0].style.transition = "0.5s";
 
 document.getElementsByClassName("disk-4")[0].style.left = "100%";
@@ -41,15 +41,15 @@ document.getElementsByClassName("disk-8")[0].style.transition = "0.5s";
 function circularLeftTopValueForward(className) {
   const leftValue = document.getElementsByClassName(className)[0].style.left;
   const topValue = document.getElementsByClassName(className)[0].style.top;
-  if (leftValue === "25%" && topValue === "160px") {
+  if (leftValue === "25%" && topValue === "calc(8vw + 10px)") {
     document.getElementsByClassName(className)[0].style.left = "50%";
     document.getElementsByClassName(className)[0].style.transform = "translate(-50%, 0)";
     document.getElementsByClassName(className)[0].style.top = "10px";
   } else if (leftValue === "50%" && topValue === "10px") {
     document.getElementsByClassName(className)[0].style.left = "75%";
     document.getElementsByClassName(className)[0].style.transform = "translate(-75%, 0)";
-    document.getElementsByClassName(className)[0].style.top = "160px";
-  } else if (leftValue === "75%" && topValue === "160px") {
+    document.getElementsByClassName(className)[0].style.top = "calc(8vw + 10px)";
+  } else if (leftValue === "75%" && topValue === "calc(8vw + 10px)") {
     document.getElementsByClassName(className)[0].style.left = "100%";
     document.getElementsByClassName(className)[0].style.transform = "translate(-100%, 0)";
     document.getElementsByClassName(className)[0].style.top = "510px";
@@ -72,29 +72,29 @@ function circularLeftTopValueForward(className) {
   } else {
     document.getElementsByClassName(className)[0].style.left = "25%";
     document.getElementsByClassName(className)[0].style.transform = "translate(-25%, 0)";
-    document.getElementsByClassName(className)[0].style.top = "160px";
+    document.getElementsByClassName(className)[0].style.top = "calc(8vw + 10px)";
   }
 }
 
 function circularLeftTopValueBackward(className) {
   const leftValue = document.getElementsByClassName(className)[0].style.left;
   const topValue = document.getElementsByClassName(className)[0].style.top;
-  if (leftValue === "25%" && topValue === "160px") {
+  if (leftValue === "25%" && topValue === "calc(8vw + 10px)") {
     document.getElementsByClassName(className)[0].style.left = "0%";
     document.getElementsByClassName(className)[0].style.transform = "translate(0%, 0)";
     document.getElementsByClassName(className)[0].style.top = "510px";
   } else if (leftValue === "50%" && topValue === "10px") {
     document.getElementsByClassName(className)[0].style.left = "25%";
     document.getElementsByClassName(className)[0].style.transform = "translate(-25%, 0)";
-    document.getElementsByClassName(className)[0].style.top = "160px";
-  } else if (leftValue === "75%" && topValue === "160px") {
+    document.getElementsByClassName(className)[0].style.top = "calc(8vw + 10px)";
+  } else if (leftValue === "75%" && topValue === "calc(8vw + 10px)") {
     document.getElementsByClassName(className)[0].style.left = "50%";
     document.getElementsByClassName(className)[0].style.transform = "translate(-50%, 0)";
     document.getElementsByClassName(className)[0].style.top = "10px";
   } else if (leftValue === "100%" && topValue === "510px") {
     document.getElementsByClassName(className)[0].style.left = "75%";
     document.getElementsByClassName(className)[0].style.transform = "translate(-75%, 0)";
-    document.getElementsByClassName(className)[0].style.top = "160px";
+    document.getElementsByClassName(className)[0].style.top = "calc(8vw + 10px)";
   } else if (leftValue === "75%" && topValue === "860px") {
     document.getElementsByClassName(className)[0].style.left = "100%";
     document.getElementsByClassName(className)[0].style.transform = "translate(-100%, 0)";
