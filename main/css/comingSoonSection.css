@@ -5,7 +5,19 @@
 
 .coming-soon-main-text {
   font-size: 70px;
-  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: -webkit-linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
@@ -18,7 +30,19 @@
 }
 
 .coming-soon-album-genre-border {
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   background-size: 400%;
   padding: 1px;
   border-radius: 50px;
@@ -34,7 +58,19 @@
 
 .coming-soon-album-genre-text {
   font-size: 40px;
-  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: -webkit-linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
@@ -47,17 +83,27 @@
 }
 
 .coming-soon-album-card-border {
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   background-size: 400%;
   animation: colorAnimate 20s linear infinite;
-  height: 500px;
   width: 100%;
   border-radius: 25px;
   padding: 3px;
 }
 
 .coming-soon-album-card {
-  height: 494px;
   width: 100%;
   background-color: black;
   border-radius: 25px;
@@ -66,8 +112,8 @@
 
 .coming-soon-album-image {
   background-image: url("../images/1.jpg");
-  height: 480px;
-  width: 100%;
+  height: calc((16.875vw - 20px) * 1.5);
+  width: calc(16.875vw - 20px);
   background-size: cover;
   background-position: center;
   border-radius: 25px;
@@ -93,6 +139,11 @@
   .coming-soon-album-genre-text {
     font-size: 17px;
   }
+
+  .coming-soon-album-image {
+    height: calc((75vw - 20px) * 1.5);
+    width: calc(75vw - 20px);
+  }
 }
 
 @media (min-width: 576px) and (max-width: 991.98px) {
@@ -102,5 +153,10 @@
 
   .coming-soon-text-area {
     margin-bottom: 80px;
+  }
+
+  .coming-soon-album-image {
+    height: calc((37.5vw - 20px) * 1.5);
+    width: calc(37.5vw - 20px);
   }
 }
