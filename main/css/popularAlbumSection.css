@@ -1,6 +1,6 @@
 .album-card-border {
   background: white;
-  width: 30%;
+  width: 21vw;
   padding: 2px;
   border-radius: 25px;
   padding: 3px;
@@ -32,8 +32,8 @@
 }
 
 .album-image {
-  width: 250px;
-  height: 250px;
+  width: calc(21vw - 70px);
+  height: calc(21vw - 70px);
   border-radius: 50%;
 }
 
@@ -115,7 +115,7 @@
   background-size: 400%;
 }
 .popular-album-slider-section {
-  width: 1050px;
+  width: 75vw;
   position: relative;
   height: 520px;
   overflow-x: hidden;
@@ -126,6 +126,29 @@
   right: 0px;
 }
 
-.album-group{
-  width: 1050px;
+.album-group {
+  width: 75vw;
+}
+
+.popular-album-section-mobile {
+  display: none !important;
+}
+
+@media (max-width: 575.98px) {
+  .popular-album-section-desktop-tablet {
+    display: none !important;
+  }
+
+  .popular-album-section-mobile {
+    display: flex !important;
+  }
+
+  .album-card-border {
+    width: 75vw;
+  }
+
+  .album-image {
+    width: calc(75vw - 70px);
+    height: calc(75vw - 70px);
+  }
 }
