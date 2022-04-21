@@ -41,8 +41,14 @@
   margin-top: 20px;
 }
 
+.text-genre-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .album-text {
   font-size: 20px;
+  margin-right: 1rem;
 }
 
 .album-genre-border {
@@ -144,11 +150,17 @@
   }
 
   .album-card-border {
-    width: 75vw;
+    width: 68vw;
   }
 
   .album-image {
-    width: calc(75vw - 70px);
-    height: calc(75vw - 70px);
+    width: calc(68vw - 70px);
+    height: calc(68vw - 70px);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .album-text {
+    margin-right: 0;
   }
 }
