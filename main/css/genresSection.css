@@ -9,7 +9,7 @@
   height: 150px;
 }
 
-.genres-category-card:hover .genre-text{
+.genres-category-card:hover .genre-text {
   background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -31,4 +31,10 @@
   border-radius: 20px;
   height: 100%;
   font-size: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .genres-category-main {
+    font-size: 12px;
+  }
 }

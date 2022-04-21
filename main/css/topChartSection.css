@@ -33,23 +33,23 @@
   border-radius: 10px;
 }
 
-.top-chart-button{
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    background: black;
-    background-size: 400%;
-    animation: colorAnimate 20s linear infinite;
+.top-chart-button {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: black;
+  background-size: 400%;
+  animation: colorAnimate 20s linear infinite;
 }
 
-.top-chart-button:hover{
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
-    background-size: 400%;
-    animation: colorAnimate 20s linear infinite;
-    color: black;
+.top-chart-button:hover {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  animation: colorAnimate 20s linear infinite;
+  color: black;
 }
 
 /* .top-chart-button:hover .fa-play{
@@ -61,3 +61,9 @@
     background-size: 400%;
     animation: colorAnimate 20s linear infinite;
 } */
+
+@media (max-width: 575.98px) {
+  .top-chart-category-main {
+    font-size: 12px;
+  }
+}
