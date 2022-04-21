@@ -1,25 +1,13 @@
 .album-card-border {
   background: white;
-  width: 21vw;
+  width: 17vw;
   padding: 2px;
   border-radius: 25px;
   padding: 3px;
 }
 
 .album-card-border:hover {
-  background: linear-gradient(
-    45deg,
-    #fb0094,
-    #00f,
-    #0f0,
-    #ff0,
-    #f00,
-    #fb0094,
-    #00f,
-    #0f0,
-    #ff0,
-    #f00
-  );
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   background-size: 400%;
   animation: colorAnimate 20s linear infinite;
   transform: scale(1.1);
@@ -32,8 +20,8 @@
 }
 
 .album-image {
-  width: calc(21vw - 70px);
-  height: calc(21vw - 70px);
+  width: calc(17vw - 70px);
+  height: calc(17vw - 70px);
   border-radius: 50%;
 }
 
@@ -52,19 +40,7 @@
 }
 
 .album-genre-border {
-  background: linear-gradient(
-    45deg,
-    #fb0094,
-    #00f,
-    #0f0,
-    #ff0,
-    #f00,
-    #fb0094,
-    #00f,
-    #0f0,
-    #ff0,
-    #f00
-  );
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   background-size: 400%;
   padding: 1px;
   border-radius: 50px;
@@ -80,19 +56,7 @@
 
 .album-genre-text {
   font-size: 15px;
-  background: -webkit-linear-gradient(
-    45deg,
-    #fb0094,
-    #00f,
-    #0f0,
-    #ff0,
-    #f00,
-    #fb0094,
-    #00f,
-    #0f0,
-    #ff0,
-    #f00
-  );
+  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
@@ -102,19 +66,7 @@
 
 .fa-play-circle {
   font-size: 65px;
-  background: -webkit-linear-gradient(
-    45deg,
-    #fb0094,
-    #00f,
-    #0f0,
-    #ff0,
-    #f00,
-    #fb0094,
-    #00f,
-    #0f0,
-    #ff0,
-    #f00
-  );
+  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: colorAnimate 20s linear infinite;
@@ -156,6 +108,18 @@
   .album-image {
     width: calc(68vw - 70px);
     height: calc(68vw - 70px);
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .album-card-border {
+    width: 21vw;
+  }
+
+  .album-image {
+    width: calc(21vw - 70px);
+    height: calc(21vw - 70px);
+    border-radius: 50%;
   }
 }
 
