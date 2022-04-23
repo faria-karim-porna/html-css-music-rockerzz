@@ -99,6 +99,10 @@
 }
 
 @media (max-width: 575.98px) {
+  .popular-album-section {
+    top: 45vw;
+  }
+
   .popular-album-section-desktop-tablet {
     display: none !important;
   }
@@ -114,6 +118,10 @@
   .album-image {
     width: calc(68vw - 70px);
     height: calc(68vw - 70px);
+  }
+
+  .album-text {
+    font-size: 18px;
   }
 }
 

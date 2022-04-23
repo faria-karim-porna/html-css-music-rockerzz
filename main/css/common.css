@@ -161,6 +161,24 @@ body {
   cursor: pointer;
 }
 
+.mt-res-2 {
+  margin-top: 2%;
+}
+
+.p-res-5 {
+  padding: 5%;
+}
+
+.p-res-2 {
+  padding: 2%;
+}
+
+@media (max-width: 575.98px) {
+  .p-mb-res-5{
+    padding: 5% !important;
+  }
+}
+
 /************ Scrollbar CSS *****************/
 
 /* width */
