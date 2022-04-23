@@ -37,7 +37,7 @@
 
   <body>
     <!-- navbar start -->
-    <header class="header-section d-flex align-items-center">
+    <header class="header-section d-flex align-items-center fixed-top">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom-nav-container d-flex justify-content-between">
           <a class="navbar-brand" href="index.html">
@@ -45,10 +45,14 @@
           </a>
           <div class="" id="">
             <div class="user-option d-flex align-items-center">
-              <a href="">
+              <div class="position-relative">
                 <i class="fa fa-user" aria-hidden="true"></i>
                 <span class="login-text">Login</span>
-              </a>
+              </div>
+              <div class="user-dropdown">
+                <div class="text-center">User Name</div>
+                <div class="text-center">Logout</div>
+              </div>
               <form class="form-inline">
                 <input type="search" placeholder="Search" />
                 <button class="btn nav_search-btn" type="submit">
