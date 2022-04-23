@@ -1,6 +1,8 @@
-.popular-album-section{
+.popular-album-section {
   position: absolute;
   top: 18vw;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .album-card-border {
