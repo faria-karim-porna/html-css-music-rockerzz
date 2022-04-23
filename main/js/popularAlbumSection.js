@@ -3,9 +3,9 @@ const device = window.matchMedia("(max-width: 575.98px)");
 const sliderHeight = document.getElementById("album-card-border-id").offsetHeight;
 const sliderMobileHeight = document.getElementById("album-card-border-mobile-id").offsetHeight;
 
-
 if (device.matches) {
   document.getElementsByClassName("popular-album-slider-section")[0].style.height = sliderMobileHeight * 1.15 + "px";
+  document.getElementsByClassName("circular-section")[0].style.height = `calc(34vw + 3rem + 150px + ${sliderMobileHeight * 1.15}px)`;
   document.getElementsByClassName("popular-album-slider")[1].style.transition = "1s";
 
   function updatePopularAlbumSectionForward() {
@@ -35,6 +35,7 @@ if (device.matches) {
   updatePopularAlbumSectionForward();
 } else {
   document.getElementsByClassName("popular-album-slider-section")[0].style.height = sliderHeight * 1.15 + "px";
+  document.getElementsByClassName("circular-section")[0].style.height = `calc(34vw + 3rem + 150px + ${sliderHeight * 1.15}px)`;
   document.getElementsByClassName("popular-album-slider")[0].style.transition = "1s";
 
   function updatePopularAlbumSectionForward() {

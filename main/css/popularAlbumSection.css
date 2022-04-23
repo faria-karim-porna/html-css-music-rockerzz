@@ -1,3 +1,8 @@
+.popular-album-section{
+  position: absolute;
+  top: 18vw;
+}
+
 .album-card-border {
   background: white;
   width: 17vw;
