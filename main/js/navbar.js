@@ -10,8 +10,7 @@ function openLoginDropdown() {
 }
 
 window.onclick = function (event) {
-    console.log(document.getElementById("user-option").onclick)
-  if (!document.getElementById("user-option").onclick) {
+  if (!(event.target.matches(".user-dropdown-button") || event.target.matches(".fa-user") || event.target.matches(".login-text"))) {
     document.getElementsByClassName("user-dropdown")[0].style.display = "none";
   }
 };

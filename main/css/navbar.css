@@ -3,6 +3,10 @@
   background-color: rgb(24, 24, 24);
 }
 
+.navbar-brand{
+  padding: 0 !important;
+}
+
 .navbar-border {
   height: 1px;
   width: 100%;
@@ -42,7 +46,7 @@
 
 .user-dropdown {
   position: absolute;
-  top: 58px;
+  top: 4rem;
   width: 200px;
   background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   background-size: 400%;
