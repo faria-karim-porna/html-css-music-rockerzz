@@ -14,12 +14,6 @@ span.onclick = function () {
   audioModal.style.display = "none";
 };
 
-// When the user clicks anywhere outside of the audio modal, close it
-window.onclick = function (event) {
-  if (event.target == audioModal) {
-    audioModal.style.display = "none";
-  }
-};
 
 // Get the video modal
 var videoModal = document.getElementsByClassName("addVideoModal")[0];
@@ -37,10 +31,13 @@ span.onclick = function () {
   videoModal.style.display = "none";
 };
 
-// When the user clicks anywhere outside of the video modal, close it
+// When the user clicks anywhere outside of the audio/video modal, close it
 window.onclick = function (event) {
   if (event.target == videoModal) {
     videoModal.style.display = "none";
+  }
+  if (event.target == audioModal) {
+    audioModal.style.display = "none";
   }
 };
 
@@ -125,11 +122,22 @@ audioDropZoneOverlay.addEventListener("drop", handleAudioDrop, false);
 var videoDropZoneOverlay = document.getElementsByClassName("drop-zone-overlay")[1];
 var videoDropZone = document.getElementsByClassName("drop-zone")[1];
 
-function showVideoDropZoneOverlay() {
-  videoDropZoneOverlay.style.display = "block";
-}
-function hideVideoDropZoneOverlay() {
-  videoDropZoneOverlay.style.display = "none";
+function scanVideoFiles(item) {
+  if (item.isFile) {
+    item.file(function (file) {
+      console.log("jsFileObject video", file);
+    });
+  }
+
+  if (item.isDirectory) {
+    let directoryReader = item.createReader();
+
+    directoryReader.readEntries(function (entries) {
+      entries.forEach(function (entry) {
+        scanVideoFiles(entry);
+      });
+    });
+  }
 }
 
 function allowVideoDrag(e) {
@@ -141,40 +149,45 @@ function allowVideoDrag(e) {
 }
 
 function handleVideoDrop(e) {
-  e.preventDefault();
-  hideVideoDropZoneOverlay();
+  let items = e.dataTransfer.items;
 
-  if (e.dataTransfer.items) {
-    // Use DataTransferItemList interface to access the file(s)
-    for (var i = 0; i < e.dataTransfer.items.length; i++) {
-      // If dropped items aren't files, reject them
-      if (e.dataTransfer.items[i].kind === "file") {
-        var file = e.dataTransfer.items[i].getAsFile();
-        console.log("... file[" + i + "].name = " + file.name);
-      }
-    }
-  } else {
-    // Use DataTransfer interface to access the file(s)
-    for (var i = 0; i < e.dataTransfer.files.length; i++) {
-      console.log("... file[" + i + "].name = " + e.dataTransfer.files[i].name);
+  e.preventDefault();
+
+  for (let i = 0; i < items.length; i++) {
+    let item = items[i].webkitGetAsEntry();
+
+    if (item) {
+      scanVideoFiles(item);
     }
   }
 }
 
-// 1
-videoDropZone.addEventListener("dragenter", function (e) {
-  showVideoDropZoneOverlay();
-});
+function showVideoDropZoneOverlay() {
+  videoDropZoneOverlay.style.display = "block";
+}
+function hideVideoDropZoneOverlay() {
+  videoDropZoneOverlay.style.display = "none";
+}
 
-2;
-videoDropZoneOverlay.addEventListener("dragenter", allowVideoDrag);
-videoDropZoneOverlay.addEventListener("dragover", allowVideoDrag);
+videoDropZone.addEventListener(
+  "dragenter",
+  function (e) {
+    showVideoDropZoneOverlay();
+  },
+  false
+);
 
-// 3
-videoDropZoneOverlay.addEventListener("dragleave", function (e) {
-  console.log("dragleave");
-  hideVideoDropZoneOverlay();
-});
+videoDropZoneOverlay.addEventListener("dragenter", allowVideoDrag, false);
 
-// 4
-videoDropZoneOverlay.addEventListener("drop", handleVideoDrop);
+videoDropZoneOverlay.addEventListener("dragover", allowVideoDrag, false);
+
+videoDropZoneOverlay.addEventListener(
+  "dragleave",
+  function (e) {
+    console.log("dragleave");
+    hideVideoDropZoneOverlay();
+  },
+  false
+);
+
+videoDropZoneOverlay.addEventListener("drop", handleVideoDrop, false);
