@@ -50,11 +50,22 @@ window.onclick = function (event) {
 var audioDropZoneOverlay = document.getElementsByClassName("drop-zone-overlay")[0];
 var audioDropZone = document.getElementsByClassName("drop-zone")[0];
 
-function showAudioDropZoneOverlay() {
-  audioDropZoneOverlay.style.display = "block";
-}
-function hideAudioDropZoneOverlay() {
-  audioDropZoneOverlay.style.display = "none";
+function scanAudioFiles(item) {
+  if (item.isFile) {
+    item.file(function (file) {
+      console.log("jsFileObject", file);
+    });
+  }
+
+  if (item.isDirectory) {
+    let directoryReader = item.createReader();
+
+    directoryReader.readEntries(function (entries) {
+      entries.forEach(function (entry) {
+        scanAudioFiles(entry);
+      });
+    });
+  }
 }
 
 function allowAudioDrag(e) {
@@ -66,43 +77,48 @@ function allowAudioDrag(e) {
 }
 
 function handleAudioDrop(e) {
-  e.preventDefault();
-  hideAudioDropZoneOverlay();
+  let items = e.dataTransfer.items;
 
-  if (e.dataTransfer.items) {
-    // Use DataTransferItemList interface to access the file(s)
-    for (var i = 0; i < e.dataTransfer.items.length; i++) {
-      // If dropped items aren't files, reject them
-      if (e.dataTransfer.items[i].kind === "file") {
-        var file = e.dataTransfer.items[i].getAsFile();
-        console.log("... file[" + i + "].name = " + file.name);
-      }
-    }
-  } else {
-    // Use DataTransfer interface to access the file(s)
-    for (var i = 0; i < e.dataTransfer.files.length; i++) {
-      console.log("... file[" + i + "].name = " + e.dataTransfer.files[i].name);
+  e.preventDefault();
+
+  for (let i = 0; i < items.length; i++) {
+    let item = items[i].webkitGetAsEntry();
+
+    if (item) {
+      scanAudioFiles(item);
     }
   }
 }
 
-// 1
-audioDropZone.addEventListener("dragenter", function (e) {
-  showAudioDropZoneOverlay();
-});
+function showAudioDropZoneOverlay() {
+  audioDropZoneOverlay.style.display = "block";
+}
+function hideAudioDropZoneOverlay() {
+  audioDropZoneOverlay.style.display = "none";
+}
 
-2;
-audioDropZoneOverlay.addEventListener("dragenter", allowAudioDrag);
-audioDropZoneOverlay.addEventListener("dragover", allowAudioDrag);
+audioDropZone.addEventListener(
+  "dragenter",
+  function (e) {
+    showAudioDropZoneOverlay();
+  },
+  false
+);
 
-// 3
-audioDropZoneOverlay.addEventListener("dragleave", function (e) {
-  console.log("dragleave");
-  hideAudioDropZoneOverlay();
-});
+audioDropZoneOverlay.addEventListener("dragenter", allowAudioDrag, false);
 
-// 4
-audioDropZoneOverlay.addEventListener("drop", handleAudioDrop);
+audioDropZoneOverlay.addEventListener("dragover", allowAudioDrag, false);
+
+audioDropZoneOverlay.addEventListener(
+  "dragleave",
+  function (e) {
+    console.log("dragleave");
+    hideAudioDropZoneOverlay();
+  },
+  false
+);
+
+audioDropZoneOverlay.addEventListener("drop", handleAudioDrop, false);
 
 ///////////////////////////////////video drag and drop handle////////////////////////////////
 
