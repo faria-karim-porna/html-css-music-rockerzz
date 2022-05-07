@@ -14,7 +14,6 @@ span.onclick = function () {
   audioModal.style.display = "none";
 };
 
-
 // Get the video modal
 var videoModal = document.getElementsByClassName("addVideoModal")[0];
 
@@ -47,9 +46,16 @@ window.onclick = function (event) {
 var audioDropZoneOverlay = document.getElementsByClassName("drop-zone-overlay")[0];
 var audioDropZone = document.getElementsByClassName("drop-zone")[0];
 
-function scanAudioFiles(item) {
+function scanAudioFiles(item, formData) {
+  if (item.isDirectory) {
+    formData.append("albumName", item.name);
+    formData.append("downloads", 0);
+    formData.append("favoriteTo", []);
+    formData.append("uploadingDate", new Date());
+  }
   if (item.isFile) {
     item.file(function (file) {
+      formData.append("file", file);
       console.log("jsFileObject", file);
     });
   }
@@ -59,7 +65,7 @@ function scanAudioFiles(item) {
 
     directoryReader.readEntries(function (entries) {
       entries.forEach(function (entry) {
-        scanAudioFiles(entry);
+        scanAudioFiles(entry, formData);
       });
     });
   }
@@ -77,14 +83,25 @@ function handleAudioDrop(e) {
   let items = e.dataTransfer.items;
 
   e.preventDefault();
-
+  const formData = new FormData();
   for (let i = 0; i < items.length; i++) {
     let item = items[i].webkitGetAsEntry();
 
     if (item) {
-      scanAudioFiles(item);
+      scanAudioFiles(item, formData);
     }
   }
+  fetch("http://localhost:5000/uploadAudio", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => response.json())
+    .then((result) => {
+      console.log("Success:", result);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
 }
 
 function showAudioDropZoneOverlay() {
