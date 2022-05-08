@@ -43,10 +43,11 @@ window.onclick = function (event) {
 ///////////////////////////////////audio drag and drop handle////////////////////////////////
 // Enhanced for my own purposes
 
-var audioDropZoneOverlay = document.getElementsByClassName("drop-zone-overlay")[0];
+var audioDropZoneOverlay =
+  document.getElementsByClassName("drop-zone-overlay")[0];
 var audioDropZone = document.getElementsByClassName("drop-zone")[0];
 
-function scanAudioFiles(item, formData) {
+function scanAudioFiles(item, formData, files) {
   if (item.isDirectory) {
     formData.append("albumName", item.name);
     formData.append("downloads", 0);
@@ -57,6 +58,7 @@ function scanAudioFiles(item, formData) {
     item.file(function (file) {
       formData.append("file", file);
       console.log("jsFileObject", file);
+      files.push(file);
     });
   }
 
@@ -65,7 +67,7 @@ function scanAudioFiles(item, formData) {
 
     directoryReader.readEntries(function (entries) {
       entries.forEach(function (entry) {
-        scanAudioFiles(entry, formData);
+        scanAudioFiles(entry, formData, files);
       });
     });
   }
@@ -84,24 +86,32 @@ function handleAudioDrop(e) {
 
   e.preventDefault();
   const formData = new FormData();
+  const files = [];
   for (let i = 0; i < items.length; i++) {
     let item = items[i].webkitGetAsEntry();
 
     if (item) {
-      scanAudioFiles(item, formData);
+      scanAudioFiles(item, formData, files);
     }
+
+    setTimeout(() => {
+      console.log("files", files);
+      for (let index = 0; index < files.length; index++) {
+        formData.append("file", files[index]);
+      }
+      fetch("http://localhost:5000/uploadAudio", {
+        method: "POST",
+        body: formData,
+      })
+        .then((response) => response.json())
+        .then((result) => {
+          console.log("Success:", result);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    }, 500);
   }
-  fetch("http://localhost:5000/uploadAudio", {
-    method: "POST",
-    body: formData,
-  })
-    .then((response) => response.json())
-    .then((result) => {
-      console.log("Success:", result);
-    })
-    .catch((error) => {
-      console.error("Error:", error);
-    });
 }
 
 function showAudioDropZoneOverlay() {
@@ -136,7 +146,8 @@ audioDropZoneOverlay.addEventListener("drop", handleAudioDrop, false);
 
 ///////////////////////////////////video drag and drop handle////////////////////////////////
 
-var videoDropZoneOverlay = document.getElementsByClassName("drop-zone-overlay")[1];
+var videoDropZoneOverlay =
+  document.getElementsByClassName("drop-zone-overlay")[1];
 var videoDropZone = document.getElementsByClassName("drop-zone")[1];
 
 function scanVideoFiles(item) {
