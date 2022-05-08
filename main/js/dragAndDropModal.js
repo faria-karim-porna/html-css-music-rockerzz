@@ -56,7 +56,6 @@ function scanAudioFiles(item, formData, files) {
   }
   if (item.isFile) {
     item.file(function (file) {
-      formData.append("file", file);
       console.log("jsFileObject", file);
       files.push(file);
     });
