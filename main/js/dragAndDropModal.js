@@ -100,15 +100,19 @@ function handleAudioDrop(e) {
             formData.append("file", files[index]);
           }
           resolve("Stuff worked!");
-        }, 10000);
+        }, 500);
       });
     };
 
     uploader(files).then((resolve) => {
-      fetch("http://localhost:5000/uploadAudio", {
+      fetch("https://secure-lowlands-33815.herokuapp.com/uploadAudio", {
         method: "POST",
         body: formData,
-      }).then((response) => response.json());
+      })
+        .then((response) => response.json())
+        .then((result) => {
+          console.log("Success:", result);
+        });
     });
   }
 }
