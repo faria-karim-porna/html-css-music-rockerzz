@@ -93,23 +93,27 @@ function handleAudioDrop(e) {
       scanAudioFiles(item, formData, files);
     }
 
-    setTimeout(() => {
-      console.log("files", files);
-      for (let index = 0; index < files.length; index++) {
-        formData.append("file", files[index]);
-      }
-      fetch("http://localhost:5000/uploadAudio", {
+    const uploader = (files) => {
+      return new Promise(function (resolve, reject) {
+        setTimeout(function () {
+          for (let index = 0; index < files.length; index++) {
+            formData.append("file", files[index]);
+          }
+          resolve("Stuff worked!");
+        }, 500);
+      });
+    };
+
+    uploader(files).then((resolve) => {
+      fetch("https://secure-lowlands-33815.herokuapp.com/uploadAudio", {
         method: "POST",
         body: formData,
       })
         .then((response) => response.json())
         .then((result) => {
           console.log("Success:", result);
-        })
-        .catch((error) => {
-          console.error("Error:", error);
         });
-    }, 500);
+    });
   }
 }
 
