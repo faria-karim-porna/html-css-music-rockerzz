@@ -7,12 +7,14 @@ body {
 .audio-section {
   background-color: rgb(24, 24, 24);
   border-radius: 15px;
+  margin-top: 4rem;
 }
 
 .audio-player-card {
   background-color: black;
   border-radius: 15px;
   z-index: -5;
+  height: calc(84px * 5 + 0.5rem * 8);
 }
 
 .audio-player-border {
