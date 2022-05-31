@@ -3,7 +3,9 @@ let audioSource;
 let analayzer;
 
 // The number of bars that should be displayed
-const NBR_OF_BARS = 20;
+const isMobile = window.matchMedia("(max-width: 575.98px)");
+const isOther = window.matchMedia("(min-width:922px) and (max-width: 1189px)");
+const NBR_OF_BARS = isMobile.matches ? 10 : isOther.matches ? 15 : 20;
 
 function playSong() {
   isPlaying = true;
@@ -191,8 +193,6 @@ function backwardDuration() {
 function addToFavorite() {
   document.getElementById("favorite").classList.toggle("add-to-favorite");
 }
-
-
 
 // change volume slider fill
 const volumeSlider = document.querySelector("#volume-slider");
