@@ -202,6 +202,10 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
 }
 
+.mobile-favourite-volume-section {
+  display: none !important;
+}
+
 @keyframes rotateAnimate {
   0% {
     transform: rotate(0deg);
@@ -233,7 +237,29 @@ input[type="range"]::-webkit-slider-thumb {
   }
 
   .cd-disk-hole {
-    width: calc(55vw - 180px);
-    height: calc(55vw - 180px);
+    width: calc(55vw - 160px);
+    height: calc(55vw - 160px);
+  }
+
+  .audio-player-actions {
+    margin-top: 0px;
+  }
+
+  .audio-buttons {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .mobile-favourite-volume-section {
+    display: flex !important;
+    margin-top: 100px;
+  }
+
+  .large-device-favourite-section {
+    display: none !important;
+  }
+
+  .large-device-volume-section {
+    display: none !important;
   }
 }
