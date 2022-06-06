@@ -1,56 +1,104 @@
-.audio-album-card-border {
+.popular-album-section {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.album-card-border {
   background: white;
-  width: 30%;
+  width: 17vw;
   padding: 2px;
   border-radius: 25px;
   padding: 3px;
 }
 
-.audio-album-card-border:hover {
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+.album-card-border:hover {
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   background-size: 400%;
   animation: colorAnimate 20s linear infinite;
   transform: scale(1.1);
 }
 
-.audio-album-card {
+.album-card {
   background-color: rgb(24, 24, 24);
   border-radius: 25px;
   padding: 15px;
 }
 
-.audio-album-image {
-  width: 250px;
-  height: 250px;
+.album-image {
+  width: calc(17vw - 70px);
+  height: calc(17vw - 70px);
   border-radius: 50%;
 }
 
-.audio-album-detail {
+.album-detail {
   margin-top: 20px;
 }
 
-.audio-album-text {
-  font-size: 20px;
+.text-genre-area {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.audio-album-genre-border {
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+.album-text {
+  font-size: 20px;
+  margin-right: 1rem;
+}
+
+.album-genre-border {
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   background-size: 400%;
   padding: 1px;
   border-radius: 50px;
   animation: colorAnimate 20s linear infinite;
 }
 
-.audio-album-genre {
+.album-genre {
   padding: 5px 15px;
   border-radius: 50px;
   width: fit-content;
   background-color: black;
 }
 
-.audio-audio-album-genre-text {
+.album-genre-text {
   font-size: 15px;
-  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: -webkit-linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
@@ -60,24 +108,80 @@
 
 .fa-play-circle {
   font-size: 65px;
-  background: -webkit-linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: -webkit-linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: colorAnimate 20s linear infinite;
   background-size: 400%;
 }
-.audio-album-slider-section {
-  width: 1050px;
+.popular-album-slider-section {
+  width: 75vw;
   position: relative;
-  height: 520px;
   overflow-x: hidden;
 }
 
-.audio-album-slider {
+.popular-album-slider {
   position: absolute;
   right: 0px;
 }
 
-.audio-album-group {
-  width: 1050px;
+.album-group {
+  width: 75vw;
+}
+
+.popular-album-section-mobile {
+  display: none !important;
+}
+
+@media (max-width: 575.98px) {
+  .popular-album-section-desktop-tablet {
+    display: none !important;
+  }
+
+  .popular-album-section-mobile {
+    display: flex !important;
+  }
+
+  .album-card-border {
+    width: 68vw;
+  }
+
+  .album-image {
+    width: calc(68vw - 70px);
+    height: calc(68vw - 70px);
+  }
+
+  .album-text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .album-card-border {
+    width: 21vw;
+  }
+
+  .album-image {
+    width: calc(21vw - 70px);
+    height: calc(21vw - 70px);
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .album-text {
+    margin-right: 0;
+  }
 }
