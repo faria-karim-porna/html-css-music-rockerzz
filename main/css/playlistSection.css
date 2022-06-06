@@ -89,6 +89,10 @@
   justify-content: center;
 }
 
+.playlist-number-mobile {
+  display: none;
+}
+
 @media (max-width: 575.98px) {
   .playlist-card {
     height: 250px;
@@ -100,13 +104,7 @@
   }
 
   .top-chart-button {
-    height: 50px;
-    width: 50px;
-  }
-
-  .top-chart-button:hover {
-    height: 50px;
-    width: 50px;
+    margin-top: 2px;
   }
 
   .audio-playlist-image {
@@ -114,11 +112,15 @@
   }
 
   .audio-playlist-text-button {
-    display: block;
+    flex-direction: column;
     width: 55%;
   }
 
   .playlist-number-large-device {
     display: none;
+  }
+
+  .playlist-number-mobile {
+    display: block;
   }
 }
