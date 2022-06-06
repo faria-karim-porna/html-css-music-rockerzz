@@ -1,47 +1,124 @@
 .playlist-card {
-    background-color: black;
-    border-radius: 15px;
-    height: 84px;
+  background-color: black;
+  border-radius: 15px;
+  height: 84px;
+}
+
+.playlist-border {
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
+  background-size: 400%;
+  border-radius: 15px;
+  height: 100%;
+  animation: colorAnimate 20s linear infinite;
+}
+
+.playlist-main {
+  background-color: black;
+  border-radius: 20px;
+  height: 100%;
+  font-size: 20px;
+}
+
+.top-chart-image {
+  background-image: url("../images/1.jpg");
+  height: 65px;
+  width: 65px;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.top-chart-button {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: black;
+  background-size: 400%;
+  animation: colorAnimate 20s linear infinite;
+}
+
+.top-chart-button:hover {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
+  background-size: 400%;
+  animation: colorAnimate 20s linear infinite;
+  color: black;
+}
+
+.audio-playlist-image {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.audio-playlist-text-button {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  justify-content: space-between;
+}
+
+.playlist-number-large-device {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 575.98px) {
+  .playlist-card {
+    height: 250px;
   }
-  
-  .playlist-border {
-    background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
-    background-size: 400%;
-    border-radius: 15px;
-    height: 100%;
-    animation: colorAnimate 20s linear infinite;
-  }
-  
-  .playlist-main {
-    background-color: black;
-    border-radius: 20px;
-    height: 100%;
-    font-size: 20px;
-  }
-  
+
   .top-chart-image {
-    background-image: url("../images/1.jpg");
-    height: 65px;
-    width: 65px;
-    background-size: cover;
-    border-radius: 10px;
+    height: 200px;
+    width: calc(100% - 2px);
   }
-  
+
   .top-chart-button {
-    border-radius: 50%;
     height: 50px;
     width: 50px;
-    background: black;
-    background-size: 400%;
-    animation: colorAnimate 20s linear infinite;
   }
-  
+
   .top-chart-button:hover {
-    border-radius: 50%;
     height: 50px;
     width: 50px;
-    background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
-    background-size: 400%;
-    animation: colorAnimate 20s linear infinite;
-    color: black;
   }
+
+  .audio-playlist-image {
+    width: 45%;
+  }
+
+  .audio-playlist-text-button {
+    display: block;
+    width: 55%;
+  }
+
+  .playlist-number-large-device {
+    display: none;
+  }
+}
