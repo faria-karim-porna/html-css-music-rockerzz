@@ -4,19 +4,21 @@ body {
   color: white;
 }
 
-.video-section {
+.audio-section {
   background-color: rgb(24, 24, 24);
   border-radius: 15px;
   margin-top: 4rem;
+  display: flex;
 }
 
-.video-player-card {
+.audio-player-card {
   background-color: black;
   border-radius: 15px;
   z-index: -5;
+  height: calc(84px * 5 + 0.5rem * 8);
 }
 
-.video-player-border {
+.audio-player-border {
   background: linear-gradient(
     45deg,
     #fb0094,
@@ -37,12 +39,25 @@ body {
   z-index: -4;
 }
 
-.video-player-main {
+.audio-player-main {
   background-color: black;
   border-radius: 20px;
   height: 100%;
   font-size: 20px;
   z-index: -3;
+}
+
+.audio-section-part {
+  width: 50%;
+}
+
+.audio-player-box {
+  padding: 1.5rem 0.5rem 0.5rem 1.5rem;
+  width: 100%;
+}
+
+.audio-page {
+  padding: 3rem;
 }
 
 @keyframes colorAnimate {
@@ -54,5 +69,25 @@ body {
   }
   100% {
     background-position: 0 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .audio-section {
+    display: block;
+  }
+
+  .audio-section-part {
+    width: 100%;
+  }
+
+  .audio-player-box {
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .audio-page {
+    padding: 3rem 0 3rem 0;
   }
 }
