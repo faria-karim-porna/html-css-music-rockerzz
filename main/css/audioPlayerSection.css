@@ -217,28 +217,28 @@ input[type="range"]::-webkit-slider-thumb {
 
 @media (max-width: 575.98px) {
   .cd-disk {
-    width: 55vw;
-    height: 55vw;
+    width: 205px;
+    height: 205px;
   }
 
   .circular-slide-image {
-    width: calc(55vw - 5px);
-    height: calc(55vw - 5px);
+    width: calc(205px - 5px);
+    height: calc(205px - 5px);
   }
 
   .cd-disk-border {
-    width: calc(55vw - 100px);
-    height: calc(55vw - 100px);
+    width: calc(205px - 100px);
+    height: calc(205px - 100px);
   }
 
   .cd-disk-inner {
-    width: calc(55vw - 110px);
-    height: calc(55vw - 110px);
+    width: calc(205px - 110px);
+    height: calc(205px - 110px);
   }
 
   .cd-disk-hole {
-    width: calc(55vw - 160px);
-    height: calc(55vw - 160px);
+    width: calc(205px - 160px);
+    height: calc(205px - 160px);
   }
 
   .audio-player-actions {
