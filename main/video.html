@@ -99,53 +99,80 @@
       <!-- video player and playlist section start -->
       <div class="audio-section">
         <!-- video player section start -->
-        <div class="w-50">
+        <div class="audio-section-part">
           <div class="">
             <div class="sub-section-name pl-4">Now Playing...</div>
-            <!-- video player section card start -->
-            <div class="w-100 pt-4 pb-2 pr-4 pl-2">
-              <div class="video-player-card p-1">
-                <div class="video-player-border">
+            <!-- audio player section card start -->
+            <div class="audio-player-box">
+              <div class="audio-player-card p-1">
+                <div class="audio-player-border">
                   <div
-                    class="video-player-main d-flex justify-content-center align-items-center text-center pt-4 pb-4"
+                    class="audio-player-main d-flex justify-content-center align-items-center text-center pt-4 pb-4"
                   >
-                    <div class="w-75 video-player-section">
+                    <div class="w-75 audio-player-section">
                       <div class="d-flex justify-content-center">
                         <!-- main  video start -->
                         <video class="main-video" type="video/mp4"></video>
                         <!-- main video end -->
                       </div>
-                      <!-- video player actions start -->
-                      <div class="video-player-actions">
+
+                      <!-- audio player mobile favorite and volume start -->
+                      <div
+                        class="d-flex justify-content-between mobile-favourite-volume-section"
+                      >
+                        <div class="" onclick="addToFavoriteVideo()" id="favorite">
+                          <i class="fa fa-heart"></i>
+                        </div>
+                        <div
+                          class="d-flex align-items-center justify-content-end"
+                        >
+                          <i class="fa fa-volume-up mr-2"></i>
+                          <div class="volume-range">
+                            <input
+                              type="range"
+                              name=""
+                              id="volume-slider"
+                              min="0"
+                              max="100"
+                              value="10"
+                              onchange="changeVideoVolume()"
+                            />
+                            <div class="volume-range-fill"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- audio player mobile favorite and volume end -->
+                      <!-- audio player actions start -->
+                      <div class="audio-player-actions">
                         <input
                           type="range"
                           name=""
                           min="0"
                           max="100"
                           value="0"
-                          id="video-duration-slider"
+                          id="duration-slider"
                           onchange="changeVideoDuration()"
                         />
                         <div class="range-fill"></div>
-                        <!-- video player buttons start -->
+                        <!-- audio player buttons start -->
                         <div
-                          class="video-player-buttons d-flex justify-content-between align-items-center"
+                          class="audio-player-buttons d-flex justify-content-between align-items-center"
                         >
                           <div
-                            class="w-25"
+                            class="w-25 large-device-favourite-section"
                             onclick="addToFavoriteVideo()"
                             id="favorite-video"
                           >
                             <i class="fa fa-heart"></i>
                           </div>
-                          <div class="d-flex align-items-center">
+                          <div class="d-flex align-items-center audio-buttons">
                             <div onclick="backwardDurationVideo()">
                               <i class="fa fa-step-backward"></i>
                             </div>
                             <div onclick="playPauseVideo()">
                               <i
                                 class="fa fa-play-circle"
-                                id="video-play-pause-icon"
+                                id="play-pause-icon"
                               ></i>
                             </div>
                             <div onclick="forwardDurationVideo()">
@@ -153,32 +180,32 @@
                             </div>
                           </div>
                           <div
-                            class="d-flex align-items-center justify-content-end w-25"
+                            class="d-flex align-items-center justify-content-end w-25 large-device-volume-section"
                           >
                             <i class="fa fa-volume-up mr-2"></i>
                             <div class="volume-range">
                               <input
                                 type="range"
                                 name=""
-                                id="video-volume-slider"
+                                id="volume-slider-video"
                                 min="0"
                                 max="100"
-                                value="100"
-                                onclick="changeVideoVolume()"
+                                value="10"
+                                onchange="changeVideoVolume()"
                               />
                               <div class="volume-range-fill"></div>
                             </div>
                           </div>
                         </div>
-                        <!-- video player buttons end -->
+                        <!-- audio player buttons end -->
                       </div>
-                      <!-- video player actions end -->
+                      <!-- audio player actions end -->
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- video player section card end -->
+            <!-- audio player section card end -->
           </div>
         </div>
         <!-- video player section end -->
