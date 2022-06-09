@@ -1,3 +1,7 @@
+.signup-view {
+  width: 50%;
+}
+
 .signup-form-section {
   z-index: 0;
 }
@@ -20,7 +24,19 @@
 }
 
 .signup-form-border {
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   background-size: 400%;
   border-radius: 15px;
   height: 100%;
@@ -38,7 +54,19 @@
 
 .input-field {
   margin-top: 20px;
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   background-size: 400%;
   border-radius: 15px;
   padding: 2px;
@@ -58,7 +86,19 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   background-size: 400%;
   border-radius: 15px;
   padding: 2px;
@@ -178,5 +218,17 @@ input:focus {
   }
   100% {
     background-position: 0 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .signup-view {
+    width: 75%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .signup-view {
+    width: 100%;
   }
 }
