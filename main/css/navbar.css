@@ -47,6 +47,10 @@
   margin-right: 75px;
 }
 
+.user-option-dashboard {
+  margin-left: auto;
+}
+
 .user-option a {
   color: #ffffff;
   margin-left: 25px;
@@ -105,7 +109,16 @@
   top: 14px;
 }
 
-.custom-menu-btn button {
+.mobile-tablet-dashboard-btn {
+  z-index: 9;
+  position: absolute;
+  left: 0;
+  top: 14px;
+  display: none;
+}
+
+.custom-menu-btn button,
+.mobile-tablet-dashboard-btn button {
   outline: none;
   border: none;
   background-color: transparent;
@@ -115,6 +128,10 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.mobile-tablet-dashboard-btn button {
+  transform: scaleX(-1);
 }
 
 .custom-menu-btn button img {
@@ -128,11 +145,14 @@
   z-index: 3;
   top: 0;
   left: 0;
-  /* background-color: black; */
   background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.dashboard-overlay {
+  background-color: rgb(24, 24, 24);
 }
 
 .overlay .closebtn {
@@ -168,12 +188,39 @@
   width: 100%;
 }
 
+.dashboard-menu-width {
+  width: 100%;
+}
+
 .menu-width.overlay a {
+  opacity: 1;
+}
+
+.dashboard-menu-width a {
   opacity: 1;
 }
 
 @media (max-width: 575.98px) {
   .login-text {
     display: none;
+  }
+  .dashboard-menu-width {
+    width: 75%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .mobile-tablet-dashboard-btn {
+    display: block;
+  }
+
+  .dashboard-navbar-brand {
+    margin-left: 75px;
+  }
+}
+
+@media (min-width: 575.99px) and (max-width: 991.98px) {
+  .dashboard-menu-width {
+    width: 50%;
   }
 }
