@@ -3,14 +3,27 @@
   background-color: rgb(24, 24, 24);
 }
 
-.navbar-brand{
+.navbar-brand {
   padding: 0 !important;
 }
 
 .navbar-border {
+  margin-top: 4rem;
   height: 1px;
   width: 100%;
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   background-size: 400%;
   animation: colorAnimate 20s linear infinite;
 }
@@ -48,7 +61,19 @@
   position: absolute;
   top: 4rem;
   width: 200px;
-  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00
+  );
   background-size: 400%;
   animation: colorAnimate 20s linear infinite;
   padding-bottom: 2px;
