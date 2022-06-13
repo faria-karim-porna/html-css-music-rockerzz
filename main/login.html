@@ -59,13 +59,18 @@
                       >
                         <div class="w-100">
                           <div class="form-name">Log In</div>
-                          <form action="" class="d-flex justify-content-center">
+                          <form
+                            action=""
+                            class="d-flex justify-content-center"
+                            onsubmit="login(event)"
+                          >
                             <div class="w-100">
                               <div class="input-field">
                                 <input
                                   type="email"
                                   placeholder="Email"
                                   class="w-100"
+                                  name="Email"
                                 />
                               </div>
                               <div class="input-field">
@@ -73,6 +78,7 @@
                                   type="password"
                                   placeholder="Password"
                                   class="w-100"
+                                  name="Password"
                                 />
                               </div>
                               <div class="mb-4 mt-5">
@@ -121,5 +127,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
