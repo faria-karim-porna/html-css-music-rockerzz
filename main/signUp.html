@@ -59,13 +59,18 @@
                       >
                         <div class="w-100">
                           <div class="form-name">Sign Up</div>
-                          <form action="" class="d-flex justify-content-center">
+                          <form
+                            action=""
+                            class="d-flex justify-content-center"
+                            onsubmit="createAccount(event)"
+                          >
                             <div class="w-100">
                               <div class="input-field">
                                 <input
                                   type="text"
                                   placeholder="Name"
                                   class="w-100"
+                                  name="Name"
                                 />
                               </div>
                               <div class="input-field">
@@ -73,6 +78,7 @@
                                   type="email"
                                   placeholder="Email"
                                   class="w-100"
+                                  name="Email"
                                 />
                               </div>
                               <div class="input-field">
@@ -80,6 +86,7 @@
                                   type="password"
                                   placeholder="Password"
                                   class="w-100"
+                                  name="Password"
                                 />
                               </div>
                               <div class="input-field">
@@ -87,6 +94,7 @@
                                   type="tel"
                                   placeholder="Phone Number"
                                   class="w-100"
+                                  name="Phone"
                                 />
                               </div>
                               <div class="checkbox-field">
@@ -97,7 +105,7 @@
                                       >Terms And Services</span
                                     >
                                   </p>
-                                  <input type="checkbox" />
+                                  <input type="checkbox" name="Terms" />
                                   <span class="checkmark"></span>
                                 </label>
                               </div>
@@ -105,8 +113,10 @@
                                 <label class="checkbox-container"
                                   ><p class="checkbox-text">
                                     Receive Upcoming Offers & Events Malls
-                                    <input type="checkbox" />
-                                    <span class="checkmark"></span>
+                                    <input type="checkbox" name="Offers"/>
+                                    <span
+                                      class="checkmark"
+                                    ></span>
                                   </p>
                                 </label>
                               </div>
@@ -156,5 +166,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="js/signUp.js"></script>
   </body>
 </html>
