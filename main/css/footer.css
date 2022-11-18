@@ -4,13 +4,42 @@
   overflow: hidden;
 }
 
-.footer-section {
+.footer-disk {
   height: calc(50vw - 5px);
   width: calc(100vw - 10px);
-  background-color: red;
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
   border-radius: 50%;
-  /* overflow-x: hidden; */
-  /* border-top-left-radius: 200px;
-  border-top-right-radius: 200px; */
-  /* border-radius: 50% 50% 0 0/ 100% 100% 0 0; */
+  background-size: 400%;
+  animation: colorAnimate 20s linear infinite;
+  transition: transform 0.7s ease-in-out;
+}
+
+.footer-body {
+  width: calc(100vw - 15px);
+  height: calc(50vw - 10px);
+  background-color: rgb(24, 24, 24);
+  border-radius: 50%;
+}
+
+.footer-disk-border {
+  background-color: black;
+  width: calc(50vw - 10px);
+  height: calc(25vw - 5px);
+  border-radius: 50%;
+}
+
+.footer-disk-inner {
+  background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  width: calc(50vw - 15px);
+  height: calc(25vw - 10px);
+  border-radius: 50%;
+  animation: colorAnimate 20s linear infinite;
+}
+
+.footer-disk-hole {
+  background-color: black;
+  width: 20vw;
+  height: 10vw;
+  border-radius: 50%;
 }
