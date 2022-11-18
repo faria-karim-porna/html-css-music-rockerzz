@@ -1,0 +1,16 @@
+.footer-outer-section {
+  height: calc(25vw - 2.5px);
+  width: calc(100vw - 10px);
+  overflow: hidden;
+}
+
+.footer-section {
+  height: calc(50vw - 5px);
+  width: calc(100vw - 10px);
+  background-color: red;
+  border-radius: 50%;
+  /* overflow-x: hidden; */
+  /* border-top-left-radius: 200px;
+  border-top-right-radius: 200px; */
+  /* border-radius: 50% 50% 0 0/ 100% 100% 0 0; */
+}
