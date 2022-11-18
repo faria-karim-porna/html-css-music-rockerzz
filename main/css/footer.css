@@ -43,3 +43,14 @@
   height: 10vw;
   border-radius: 50%;
 }
+
+.footer-text {
+  top: 160px;
+  width: calc(100vw - 10px);
+}
+
+.footer-text span {
+  position: absolute;
+  font-size: 1.2em;
+  transform-origin: 0 100px;
+}
