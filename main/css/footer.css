@@ -54,3 +54,16 @@
   font-size: 1.2em;
   transform-origin: 0 100px;
 }
+
+/* svg{
+  height: 500px;
+  width: 100%;
+} */
+
+.footer-title {
+  font-size: 35px;
+}
+
+.footer-link {
+  font-size: 25px;
+}
